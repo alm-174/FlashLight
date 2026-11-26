@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Theme roles from Figma -->
+    <color name="primary">#34D399</color>
+    <color name="primary_gradient_end">#93FFD8</color>
+    <color name="background">#111111</color>
+    <color name="surface">#22262C</color>
+    <color name="stroke">#36394A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#C1C7D0</color>
+    <color name="text_tertiary">#A4ACB9</color>
+    <color name="on_primary">#1A1B25</color>
+
+    <!-- Primary alpha variants for light backgrounds -->
+    <color name="primary_10">#1A34D399</color>
+    <color name="primary_20">#3334D399</color>
+    <color name="primary_30">#4D34D399</color>
 </resources>
