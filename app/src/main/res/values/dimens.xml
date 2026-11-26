@@ -23,4 +23,40 @@
 
     <!-- Component heights -->
     <dimen name="button_height">48dp</dimen>
+
+    <!-- Corner radii bổ sung -->
+    <dimen name="radius_dialog">16dp</dimen>
+    <dimen name="radius_image">8dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+
+    <!-- Khung / vùng chạm -->
+    <dimen name="top_bar_height">56dp</dimen>
+    <dimen name="touch_target">48dp</dimen>
+
+    <!-- Icon -->
+    <dimen name="icon_small">20dp</dimen>
+    <dimen name="icon_medium">24dp</dimen>
+    <dimen name="icon_large">32dp</dimen>
+    <dimen name="feature_icon_size">44dp</dimen>
+    <dimen name="feature_icon_radius">12dp</dimen>
+
+    <!-- Swatch màu -->
+    <dimen name="swatch_size">40dp</dimen>
+    <dimen name="swatch_ring">2dp</dimen>
+
+    <!-- Nút tròn -->
+    <dimen name="power_button_size">140dp</dimen>
+    <dimen name="round_button_size">40dp</dimen>
+    <dimen name="shutter_size">64dp</dimen>
+
+    <!-- Viền / đường kẻ -->
+    <dimen name="stroke_thin">1dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Thẻ / danh sách -->
+    <dimen name="card_padding_vertical">12dp</dimen>
+    <dimen name="card_padding_horizontal">16dp</dimen>
+    <dimen name="card_gap">14dp</dimen>
+    <dimen name="list_item_gap">8dp</dimen>
+    <dimen name="section_gap">12dp</dimen>
 </resources>

@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">Zurück</string>
+    <string name="common_close">Schließen</string>
+    <string name="common_cancel">Abbrechen</string>
+    <string name="common_save">Speichern</string>
+    <string name="common_apply">Anwenden</string>
+    <string name="common_choose">Wählen</string>
+    <string name="common_done">Fertig</string>
+    <string name="common_next">Weiter</string>
+    <string name="common_continue">Weiter</string>
+    <string name="common_submit">Senden</string>
+    <string name="common_edit">Bearbeiten</string>
+    <string name="common_select_all">Alle auswählen</string>
+    <string name="common_on">EIN</string>
+    <string name="common_off">AUS</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">Farbe</string>
+    <string name="common_background">Hintergrund</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">Status: Ein</string>
+    <string name="common_status_off">Status: Aus</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Flashlight</string>
+
+    <!-- Language -->
+    <string name="language_title">Sprache</string>
+    <string name="language_choose_title">Sprache wählen</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Helle Taschenlampe</string>
+    <string name="onboarding_1_desc">Nutze dein Handy jederzeit als starke Taschenlampe.</string>
+    <string name="onboarding_2_title">SOS- &amp; DJ-Blitz</string>
+    <string name="onboarding_2_desc">Aktiviere SOS im Notfall oder DJ-Blitz auf Partys.</string>
+    <string name="onboarding_3_title">Farbiges Bildschirmlicht</string>
+    <string name="onboarding_3_desc">Verwandle deinen Bildschirm in ein helles, buntes Licht.</string>
+    <string name="onboarding_4_title">Eigenes LED-Banner</string>
+    <string name="onboarding_4_desc">Zeige Lauftext mit eigenen Farben und Effekten an.</string>
+    <string name="onboarding_get_started">Los geht\'s!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">Hoppla, keine Internetverbindung</string>
+    <string name="no_internet_message">Stelle sicher, dass WLAN oder mobile Daten aktiviert sind, und versuche es erneut.</string>
+    <string name="no_internet_go_settings">Zu den Einstellungen</string>
+
+    <!-- Permission -->
+    <string name="permission_title">Berechtigung</string>
+    <string name="permission_message">%1$s bittet um Zugriff, um dir den besten Service zu bieten</string>
+    <string name="permission_camera">Kamera</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Leuchtet jederzeit und überall.</string>
+    <string name="home_led_label">Hero-Bereich</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">Jetzt abspielen!</string>
+    <string name="home_led_speed">Geschwindigkeit: %1$ds</string>
+    <string name="home_led_rgb">RGB-Mehrfarbig</string>
+    <string name="home_custom_text">Eigener Text →</string>
+    <string name="home_led_default_marquee">⚡ WELCOME TO CONCERT NIGHT ⚡ • PARTY MODE ON • LED SCROLLER</string>
+    <string name="home_flash_title">Blitz</string>
+    <string name="home_flash_desc">Blitz-, SOS- &amp; DJ-Modus</string>
+    <string name="home_flash_action">Modi entdecken</string>
+    <string name="home_alert_title">Blitzalarm</string>
+    <string name="home_alert_desc">Anrufe &amp; Benachrichtigungen</string>
+    <string name="home_alert_action">Alarm einrichten</string>
+    <string name="home_screenlight_title">Screenlight</string>
+    <string name="home_screenlight_desc">Sanftes Licht &amp; Leselampe</string>
+    <string name="home_preset">Vorlage:</string>
+    <string name="home_adjust">Anpassen</string>
+    <string name="home_edge_title">Edge Lighting</string>
+    <string name="home_edge_desc">Randlicht &amp; Notch-Puls</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">Kamera</string>
+    <string name="home_settings_cd">Einstellungen</string>
+
+    <!-- Flash -->
+    <string name="flash_title">Blitz</string>
+    <string name="flash_tab_light">Taschenlampe</string>
+    <string name="flash_tab_sos">SOS-Licht</string>
+    <string name="flash_tab_dj">DJ-Modus</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">Kamera schließen</string>
+    <string name="camera_capture_cd">Foto aufnehmen</string>
+    <string name="camera_torch_cd">Taschenlampe umschalten</string>
+    <string name="camera_zoom_in_cd">Vergrößern</string>
+    <string name="camera_zoom_out_cd">Verkleinern</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">Helligkeit</string>
+    <string name="screenlight_fullscreen_cd">Vollbild</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">Eigene Farbe</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">Text</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">Schriftgröße</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">Lauftext-Geschwindigkeit</string>
+    <string name="led_direction">Richtung</string>
+    <string name="led_visual_effects">Visuelle Effekte</string>
+    <string name="led_effect_glow">Leuchten</string>
+    <string name="led_effect_blink">Blinken</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Verblassen</string>
+    <string name="led_add_background_cd">Hintergrundbild hinzufügen</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">Blitzalarm</string>
+    <string name="alert_calls">Eingehende Anrufe</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">Benachrichtigung</string>
+    <string name="alert_item_hint">Für mehr Einstellungen tippen</string>
+    <string name="alert_flashing_speed">Blitzgeschwindigkeit</string>
+    <string name="alert_flashing_on">Blinken EIN</string>
+    <string name="alert_flashing_off">Blinken AUS</string>
+    <string name="alert_select_app">App auswählen</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">Edge Lighting</string>
+    <string name="edge_enable">Edge Lighting aktivieren, um zu starten</string>
+    <string name="edge_border_style">Randstil</string>
+    <string name="edge_style_weather">Wetter &amp; Natur</string>
+    <string name="edge_style_arrow">Pfeil</string>
+    <string name="edge_style_commerce">Handel</string>
+    <string name="edge_run_style">Laufstil</string>
+    <string name="edge_run_none">Kein</string>
+    <string name="edge_run_rotation">Rotation</string>
+    <string name="edge_run_run">Run</string>
+    <string name="edge_run_r_run">R Run</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">Rand</string>
+    <string name="edge_top_radius">Radius oben</string>
+    <string name="edge_bottom_radius">Radius unten</string>
+    <string name="edge_width">Breite</string>
+    <string name="edge_color_speed">Farbgeschwindigkeit</string>
+    <string name="edge_notch_style">Notch-Stil</string>
+    <string name="edge_notch_full">Voll</string>
+    <string name="edge_notch_water">Water</string>
+    <string name="edge_add_color_title">Randfarbe hinzufügen</string>
+    <string name="edge_add_color_desc">Lege die Farbe deines Randeffekts fest</string>
+    <string name="edge_edit_color_title">Randfarbe bearbeiten</string>
+    <string name="edge_edit_color_desc">Wähle eine Farbe für dein Edge-Lighting-Effekt</string>
+    <string name="edge_display_mode_title">Anzeigemodus wählen</string>
+    <string name="edge_display_mode_desc">Wähle, wo dein Edge-Lighting-Effekt auf deinem Gerät erscheinen soll.</string>
+    <string name="edge_mode_home">Startbildschirm</string>
+    <string name="edge_mode_lock">Sperrbildschirm</string>
+    <string name="edge_mode_overlay">Über allen Apps</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_share">Teilen</string>
+    <string name="settings_rate">App bewerten</string>
+    <string name="settings_privacy">Datenschutzrichtlinie</string>
+    <string name="settings_policy">Richtlinieneinstellungen</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">Gefällt dir %1$s?</string>
+    <string name="rate_0_message">Dein Feedback hilft uns, besser zu werden! Nimm dir einen Moment Zeit, um uns zu bewerten.</string>
+    <string name="rate_1_title">Oh nein! Das tut uns leid.</string>
+    <string name="rate_1_message">Dein Feedback ist uns wichtig. Kannst du uns sagen, was schiefgelaufen ist?</string>
+    <string name="rate_2_title">Wie herzzerreißend!</string>
+    <string name="rate_2_message">Was können wir tun, um 5 Sterne von dir zu verdienen?</string>
+    <string name="rate_3_title">Danke für dein Feedback!</string>
+    <string name="rate_3_message">Wir würden gerne wissen, wie wir dein Erlebnis verbessern können.</string>
+    <string name="rate_4_title">Danke für deine Unterstützung!</string>
+    <string name="rate_4_message">Schön, dass dir die App gefällt! Öffentliche Bewertungen helfen uns zu wachsen.</string>
+    <string name="rate_5_title">Super! Du hast unseren Tag gerettet!</string>
+    <string name="rate_5_message">Deine Zufriedenheit macht unsere ganze harte Arbeit wertvoll.</string>
 </resources>

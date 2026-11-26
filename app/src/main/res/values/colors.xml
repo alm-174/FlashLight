@@ -20,4 +20,40 @@
     <color name="primary_10">#1A34D399</color>
     <color name="primary_20">#3334D399</color>
     <color name="primary_30">#4D34D399</color>
+
+    <!-- Accent colors theo tính năng (icon vuông, viền thẻ, nút viền ở Home) -->
+    <color name="accent_led">@color/primary</color>
+    <color name="accent_flash">#C084FC</color> <!-- TODO: lấy từ Figma (thẻ Flash, tím) -->
+    <color name="accent_alert">#60A5FA</color>
+    <color name="accent_screenlight">#60A5FA</color>
+    <color name="accent_edge">#E879F9</color> <!-- TODO: lấy từ Figma (thẻ Edge Lighting, tím hồng) -->
+    <color name="accent_sos">#EF4444</color> <!-- TODO: lấy từ Figma (icon đèn báo động) -->
+
+    <!-- Accent colors alpha 25% (viền thẻ) -->
+    <color name="accent_led_25">#4034D399</color>
+    <color name="accent_flash_25">#40C084FC</color>
+    <color name="accent_alert_25">#4060A5FA</color>
+    <color name="accent_screenlight_25">#4060A5FA</color>
+    <color name="accent_edge_25">#40E879F9</color>
+    <color name="accent_sos_25">#40EF4444</color>
+
+    <!-- Trạng thái -->
+    <color name="overlay_scrim">#99000000</color>
+    <color name="white_50">#80FFFFFF</color>
+    <!-- disabled_bg / disabled_text không tạo mới: trùng giá trị với stroke (#36394A) và text_tertiary (#A4ACB9) đã có, dùng lại 2 tên đó -->
+
+    <!-- Bảng màu preset dùng chung: Screen Light / LED / Edge -->
+    <color name="preset_blue">#4FC3F7</color>
+    <color name="preset_yellow">#FFD54F</color>
+    <color name="preset_green">#81C784</color>
+    <color name="preset_purple">#BA68C8</color>
+    <color name="preset_red">#E57373</color> <!-- TODO: đo lại từ Figma -->
+    <!-- preset_white không tạo mới: trùng @color/white -->
+
+    <!-- Preset ở thẻ Screenlight trên Home (5 màu cuối) -->
+    <color name="preset_amber">#FDE68A</color> <!-- TODO: đo lại từ Figma -->
+    <color name="preset_orange">#F97316</color> <!-- TODO: đo lại từ Figma -->
+    <color name="preset_cyan">#22D3EE</color> <!-- TODO: đo lại từ Figma -->
+    <!-- preset_violet không tạo mới: trùng @color/accent_flash -->
+    <!-- preset_mint không tạo mới: trùng @color/primary -->
 </resources>

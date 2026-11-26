@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">वापस</string>
+    <string name="common_close">बंद करें</string>
+    <string name="common_cancel">रद्द करें</string>
+    <string name="common_save">सेव करें</string>
+    <string name="common_apply">लागू करें</string>
+    <string name="common_choose">चुनें</string>
+    <string name="common_done">हो गया</string>
+    <string name="common_next">आगे</string>
+    <string name="common_continue">जारी रखें</string>
+    <string name="common_submit">सबमिट करें</string>
+    <string name="common_edit">एडिट करें</string>
+    <string name="common_select_all">सभी चुनें</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">रंग</string>
+    <string name="common_background">बैकग्राउंड</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">स्थिति: ऑन</string>
+    <string name="common_status_off">स्थिति: ऑफ</string>
+
+    <!-- Splash -->
+    <string name="splash_title">फ्लैशलाइट</string>
+
+    <!-- Language -->
+    <string name="language_title">भाषा</string>
+    <string name="language_choose_title">भाषा चुनें</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">तेज़ फ्लैशलाइट</string>
+    <string name="onboarding_1_desc">अपने फोन को कभी भी शक्तिशाली फ्लैशलाइट के रूप में उपयोग करें।</string>
+    <string name="onboarding_2_title">SOS और DJ फ्लैश</string>
+    <string name="onboarding_2_desc">आपातकाल में SOS चालू करें या पार्टी में DJ फ्लैश का उपयोग करें।</string>
+    <string name="onboarding_3_title">कलर स्क्रीन लाइट</string>
+    <string name="onboarding_3_desc">अपनी स्क्रीन को एक चमकदार, रंगीन लाइट में बदलें।</string>
+    <string name="onboarding_4_title">कस्टम LED बैनर</string>
+    <string name="onboarding_4_desc">कस्टम रंगों और इफेक्ट के साथ स्क्रॉलिंग LED टेक्स्ट दिखाएं।</string>
+    <string name="onboarding_get_started">शुरू करें!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">ओह्ह, इंटरनेट कनेक्शन नहीं है</string>
+    <string name="no_internet_message">सुनिश्चित करें कि वाई-फाई या मोबाइल डेटा ऑन है, फिर फिर से कोशिश करें।</string>
+    <string name="no_internet_go_settings">सेटिंग्स में जाएं</string>
+
+    <!-- Permission -->
+    <string name="permission_title">अनुमति</string>
+    <string name="permission_message">%1$s आपको सर्वश्रेष्ठ सेवा देने के लिए एक्सेस का अनुरोध कर रहा है</string>
+    <string name="permission_camera">कैमरा</string>
+
+    <!-- Home -->
+    <string name="home_tagline">कभी भी, कहीं भी रोशनी करें।</string>
+    <string name="home_led_label">हीरो सेक्शन</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">अभी चलाएं!</string>
+    <string name="home_led_speed">स्पीड: %1$ds</string>
+    <string name="home_led_rgb">RGB मल्टी-कलर</string>
+    <string name="home_custom_text">कस्टम टेक्स्ट →</string>
+    <string name="home_led_default_marquee">⚡ कॉन्सर्ट नाइट में आपका स्वागत है ⚡ • पार्टी मोड ऑन • LED स्क्रॉलर</string>
+    <string name="home_flash_title">फ्लैश</string>
+    <string name="home_flash_desc">फ्लैश, SOS और DJ मोड</string>
+    <string name="home_flash_action">मोड एक्सप्लोर करें</string>
+    <string name="home_alert_title">फ्लैश अलर्ट</string>
+    <string name="home_alert_desc">कॉल और नोटिफिकेशन</string>
+    <string name="home_alert_action">अलर्ट सेट करें</string>
+    <string name="home_screenlight_title">स्क्रीनलाइट</string>
+    <string name="home_screenlight_desc">सॉफ्ट लाइट और रीडिंग कलर लैंप</string>
+    <string name="home_preset">प्रीसेट:</string>
+    <string name="home_adjust">एडजस्ट करें</string>
+    <string name="home_edge_title">एज लाइटिंग</string>
+    <string name="home_edge_desc">फोन बॉर्डर लाइट्स और नॉच पल्स</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">कैमरा</string>
+    <string name="home_settings_cd">सेटिंग्स</string>
+
+    <!-- Flash -->
+    <string name="flash_title">फ्लैश</string>
+    <string name="flash_tab_light">फ्लैश लाइट</string>
+    <string name="flash_tab_sos">SOS लाइट</string>
+    <string name="flash_tab_dj">DJ मोड</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">कैमरा बंद करें</string>
+    <string name="camera_capture_cd">फोटो लें</string>
+    <string name="camera_torch_cd">फ्लैशलाइट टॉगल करें</string>
+    <string name="camera_zoom_in_cd">ज़ूम इन</string>
+    <string name="camera_zoom_out_cd">ज़ूम आउट</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">ब्राइटनेस</string>
+    <string name="screenlight_fullscreen_cd">फुल स्क्रीन</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">कस्टम रंग</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">टेक्स्ट</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">फॉन्ट साइज़</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">स्क्रॉल स्पीड</string>
+    <string name="led_direction">दिशा</string>
+    <string name="led_visual_effects">विज़ुअल इफेक्ट्स</string>
+    <string name="led_effect_glow">Glow</string>
+    <string name="led_effect_blink">Blink</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Fade</string>
+    <string name="led_add_background_cd">बैकग्राउंड इमेज जोड़ें</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">फ्लैश अलर्ट</string>
+    <string name="alert_calls">इनकमिंग कॉल</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">नोटिफिकेशन</string>
+    <string name="alert_item_hint">अधिक सेटिंग्स के लिए टैप करें</string>
+    <string name="alert_flashing_speed">फ्लैशिंग स्पीड</string>
+    <string name="alert_flashing_on">फ्लैशिंग ON</string>
+    <string name="alert_flashing_off">फ्लैशिंग OFF</string>
+    <string name="alert_select_app">ऐप चुनें</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">एज लाइटिंग</string>
+    <string name="edge_enable">शुरू करने के लिए एज लाइटिंग चालू करें</string>
+    <string name="edge_border_style">बॉर्डर स्टाइल</string>
+    <string name="edge_style_weather">मौसम और प्रकृति</string>
+    <string name="edge_style_arrow">एरो</string>
+    <string name="edge_style_commerce">कॉमर्स</string>
+    <string name="edge_run_style">रन स्टाइल</string>
+    <string name="edge_run_none">कोई नहीं</string>
+    <string name="edge_run_rotation">रोटेशन</string>
+    <string name="edge_run_run">Run</string>
+    <string name="edge_run_r_run">R Run</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">बॉर्डर</string>
+    <string name="edge_top_radius">टॉप रेडियस</string>
+    <string name="edge_bottom_radius">बॉटम रेडियस</string>
+    <string name="edge_width">चौड़ाई</string>
+    <string name="edge_color_speed">कलर स्पीड</string>
+    <string name="edge_notch_style">नॉच स्टाइल</string>
+    <string name="edge_notch_full">फुल</string>
+    <string name="edge_notch_water">वॉटर</string>
+    <string name="edge_add_color_title">बॉर्डर कलर जोड़ें</string>
+    <string name="edge_add_color_desc">अपने एज इफेक्ट का रंग सेट करें</string>
+    <string name="edge_edit_color_title">बॉर्डर कलर एडिट करें</string>
+    <string name="edge_edit_color_desc">अपने एज लाइटिंग इफेक्ट को पर्सनलाइज़ करने के लिए एक रंग चुनें</string>
+    <string name="edge_display_mode_title">डिस्प्ले मोड चुनें</string>
+    <string name="edge_display_mode_desc">चुनें कि आपका एज लाइटिंग इफेक्ट आपके डिवाइस पर कहां दिखे।</string>
+    <string name="edge_mode_home">होमस्क्रीन</string>
+    <string name="edge_mode_lock">लॉकस्क्रीन</string>
+    <string name="edge_mode_overlay">सभी ऐप्स पर ओवरले</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_share">शेयर करें</string>
+    <string name="settings_rate">ऐप को रेट करें</string>
+    <string name="settings_privacy">प्राइवेसी पॉलिसी</string>
+    <string name="settings_policy">पॉलिसी सेटिंग</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">क्या आपको %1$s पसंद है?</string>
+    <string name="rate_0_message">आपकी प्रतिक्रिया हमें बेहतर बनाने में मदद करती है! कृपया अपना अनुभव रेट करने के लिए एक पल दें।</string>
+    <string name="rate_1_title">ओह नहीं! हमें यह सुनकर दुख हुआ।</string>
+    <string name="rate_1_message">आपकी प्रतिक्रिया हमारे सुधार के लिए बहुत ज़रूरी है। कृपया बताएं कि क्या गलत हुआ?</string>
+    <string name="rate_2_title">दिल तोड़ने वाली बात है!</string>
+    <string name="rate_2_message">आपसे 5-स्टार रेटिंग पाने के लिए हम क्या कर सकते हैं?</string>
+    <string name="rate_3_title">प्रतिक्रिया के लिए धन्यवाद!</string>
+    <string name="rate_3_message">हम जानना चाहेंगे कि हम आपका अनुभव और बेहतर कैसे बना सकते हैं।</string>
+    <string name="rate_4_title">आपके सपोर्ट के लिए धन्यवाद!</string>
+    <string name="rate_4_message">हमें खुशी है कि आप ऐप का आनंद ले रहे हैं! पब्लिक रिव्यू हमें आगे बढ़ने में मदद करते हैं।</string>
+    <string name="rate_5_title">बहुत बढ़िया! आपने हमारा दिन बना दिया!</string>
+    <string name="rate_5_message">आपकी संतुष्टि हमारी सारी मेहनत को सार्थक बनाती है।</string>
 </resources>

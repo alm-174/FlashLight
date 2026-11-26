@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">Kembali</string>
+    <string name="common_close">Tutup</string>
+    <string name="common_cancel">Batal</string>
+    <string name="common_save">Simpan</string>
+    <string name="common_apply">Terapkan</string>
+    <string name="common_choose">Pilih</string>
+    <string name="common_done">Selesai</string>
+    <string name="common_next">Lanjut</string>
+    <string name="common_continue">Lanjutkan</string>
+    <string name="common_submit">Kirim</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_select_all">Pilih Semua</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">Warna</string>
+    <string name="common_background">Latar Belakang</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">Status: Aktif</string>
+    <string name="common_status_off">Status: Nonaktif</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Flashlight</string>
+
+    <!-- Language -->
+    <string name="language_title">Bahasa</string>
+    <string name="language_choose_title">Pilih Bahasa</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Senter Terang</string>
+    <string name="onboarding_1_desc">Gunakan ponselmu sebagai senter yang kuat kapan saja.</string>
+    <string name="onboarding_2_title">SOS &amp; DJ Flash</string>
+    <string name="onboarding_2_desc">Aktifkan SOS saat darurat atau DJ flash saat pesta.</string>
+    <string name="onboarding_3_title">Cahaya Layar Berwarna</string>
+    <string name="onboarding_3_desc">Ubah layarmu menjadi cahaya yang terang dan berwarna.</string>
+    <string name="onboarding_4_title">Banner LED Kustom</string>
+    <string name="onboarding_4_desc">Tampilkan teks LED berjalan dengan warna dan efek kustom.</string>
+    <string name="onboarding_get_started">Mulai!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">Oops, Tidak Ada Koneksi Internet</string>
+    <string name="no_internet_message">Pastikan wifi atau data seluler sudah aktif, lalu coba lagi.</string>
+    <string name="no_internet_go_settings">Buka Pengaturan</string>
+
+    <!-- Permission -->
+    <string name="permission_title">Izin</string>
+    <string name="permission_message">%1$s meminta akses untuk memberikan layanan terbaik untukmu</string>
+    <string name="permission_camera">Kamera</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Nyalakan cahaya kapan saja, di mana saja.</string>
+    <string name="home_led_label">Bagian Utama</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">Mainkan Sekarang!</string>
+    <string name="home_led_speed">Kecepatan: %1$ds</string>
+    <string name="home_led_rgb">RGB Multi-Warna</string>
+    <string name="home_custom_text">Teks Kustom →</string>
+    <string name="home_led_default_marquee">⚡ SELAMAT DATANG DI MALAM KONSER ⚡ • MODE PESTA AKTIF • LED SCROLLER</string>
+    <string name="home_flash_title">Flash</string>
+    <string name="home_flash_desc">Mode Flash, SOS &amp; DJ</string>
+    <string name="home_flash_action">Jelajahi Mode</string>
+    <string name="home_alert_title">Flash Alert</string>
+    <string name="home_alert_desc">Panggilan &amp; Notifikasi</string>
+    <string name="home_alert_action">Atur Peringatan</string>
+    <string name="home_screenlight_title">Screenlight</string>
+    <string name="home_screenlight_desc">Cahaya Lembut &amp; Lampu Baca Berwarna</string>
+    <string name="home_preset">Preset:</string>
+    <string name="home_adjust">Sesuaikan</string>
+    <string name="home_edge_title">Edge Lighting</string>
+    <string name="home_edge_desc">Lampu tepi ponsel &amp; denyut notch</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">Kamera</string>
+    <string name="home_settings_cd">Pengaturan</string>
+
+    <!-- Flash -->
+    <string name="flash_title">Flash</string>
+    <string name="flash_tab_light">Flash Light</string>
+    <string name="flash_tab_sos">SOS Light</string>
+    <string name="flash_tab_dj">DJ Mode</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">Tutup kamera</string>
+    <string name="camera_capture_cd">Ambil foto</string>
+    <string name="camera_torch_cd">Nyalakan/matikan senter</string>
+    <string name="camera_zoom_in_cd">Perbesar</string>
+    <string name="camera_zoom_out_cd">Perkecil</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">Kecerahan</string>
+    <string name="screenlight_fullscreen_cd">Layar penuh</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">Warna kustom</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">Teks</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">Ukuran Font</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">Kecepatan Geser</string>
+    <string name="led_direction">Arah</string>
+    <string name="led_visual_effects">Efek Visual</string>
+    <string name="led_effect_glow">Glow</string>
+    <string name="led_effect_blink">Blink</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Fade</string>
+    <string name="led_add_background_cd">Tambah gambar latar belakang</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">Flash Alert</string>
+    <string name="alert_calls">Panggilan Masuk</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">Notifikasi</string>
+    <string name="alert_item_hint">Ketuk untuk pengaturan lainnya</string>
+    <string name="alert_flashing_speed">Kecepatan Kilatan</string>
+    <string name="alert_flashing_on">Kilatan ON</string>
+    <string name="alert_flashing_off">Kilatan OFF</string>
+    <string name="alert_select_app">Pilih Aplikasi</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">Edge Lighting</string>
+    <string name="edge_enable">Aktifkan Edge Lighting untuk memulai</string>
+    <string name="edge_border_style">Gaya Border</string>
+    <string name="edge_style_weather">Cuaca &amp; Alam</string>
+    <string name="edge_style_arrow">Panah</string>
+    <string name="edge_style_commerce">Commerce</string>
+    <string name="edge_run_style">Gaya Jalan</string>
+    <string name="edge_run_none">Tidak Ada</string>
+    <string name="edge_run_rotation">Rotasi</string>
+    <string name="edge_run_run">Run</string>
+    <string name="edge_run_r_run">R Run</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">Border</string>
+    <string name="edge_top_radius">Radius Atas</string>
+    <string name="edge_bottom_radius">Radius Bawah</string>
+    <string name="edge_width">Lebar</string>
+    <string name="edge_color_speed">Kecepatan Warna</string>
+    <string name="edge_notch_style">Gaya Notch</string>
+    <string name="edge_notch_full">Penuh</string>
+    <string name="edge_notch_water">Water</string>
+    <string name="edge_add_color_title">Tambah Warna Border</string>
+    <string name="edge_add_color_desc">Atur warna efek tepi layarmu</string>
+    <string name="edge_edit_color_title">Edit Warna Border</string>
+    <string name="edge_edit_color_desc">Pilih warna untuk mempersonalisasi efek edge lighting-mu</string>
+    <string name="edge_display_mode_title">Pilih Mode Tampilan</string>
+    <string name="edge_display_mode_desc">Pilih di mana efek edge lighting-mu akan muncul di perangkatmu.</string>
+    <string name="edge_mode_home">HomeScreen</string>
+    <string name="edge_mode_lock">LockScreen</string>
+    <string name="edge_mode_overlay">Overlay Semua Aplikasi</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Pengaturan</string>
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_share">Bagikan</string>
+    <string name="settings_rate">Beri Nilai Aplikasi</string>
+    <string name="settings_privacy">Kebijakan Privasi</string>
+    <string name="settings_policy">Pengaturan Kebijakan</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">Apakah kamu suka %1$s?</string>
+    <string name="rate_0_message">Masukanmu membantu kami berkembang! Luangkan waktu sebentar untuk menilai pengalamanmu.</string>
+    <string name="rate_1_title">Oh tidak! Maaf mendengar itu.</string>
+    <string name="rate_1_message">Masukanmu sangat penting bagi kami untuk berkembang. Bisakah kamu beri tahu apa yang salah?</string>
+    <string name="rate_2_title">Menyedihkan!</string>
+    <string name="rate_2_message">Apa yang bisa kami lakukan untuk mendapatkan rating bintang 5 darimu?</string>
+    <string name="rate_3_title">Terima kasih atas masukannya!</string>
+    <string name="rate_3_message">Kami ingin tahu bagaimana cara membuat pengalamanmu lebih baik.</string>
+    <string name="rate_4_title">Terima kasih atas dukunganmu!</string>
+    <string name="rate_4_message">Senang kamu menikmati aplikasi ini! Ulasan publik membantu kami berkembang.</string>
+    <string name="rate_5_title">Hebat! Kamu membuat hari kami menyenangkan!</string>
+    <string name="rate_5_message">Kepuasanmu membuat semua kerja keras kami sepadan.</string>
 </resources>

@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">Indietro</string>
+    <string name="common_close">Chiudi</string>
+    <string name="common_cancel">Annulla</string>
+    <string name="common_save">Salva</string>
+    <string name="common_apply">Applica</string>
+    <string name="common_choose">Scegli</string>
+    <string name="common_done">Fine</string>
+    <string name="common_next">Avanti</string>
+    <string name="common_continue">Continua</string>
+    <string name="common_submit">Invia</string>
+    <string name="common_edit">Modifica</string>
+    <string name="common_select_all">Seleziona tutto</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">Colore</string>
+    <string name="common_background">Sfondo</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">Stato: Attivo</string>
+    <string name="common_status_off">Stato: Disattivo</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Torcia</string>
+
+    <!-- Language -->
+    <string name="language_title">Lingua</string>
+    <string name="language_choose_title">Scegli lingua</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Torcia Potente</string>
+    <string name="onboarding_1_desc">Usa il telefono come una potente torcia in qualsiasi momento.</string>
+    <string name="onboarding_2_title">SOS e Flash DJ</string>
+    <string name="onboarding_2_desc">Attiva l\'SOS in caso di emergenza o il flash DJ alle feste.</string>
+    <string name="onboarding_3_title">Luce Colorata sullo Schermo</string>
+    <string name="onboarding_3_desc">Trasforma lo schermo in una luce colorata e luminosa.</string>
+    <string name="onboarding_4_title">Banner LED Personalizzato</string>
+    <string name="onboarding_4_desc">Mostra testo LED scorrevole con colori ed effetti personalizzati.</string>
+    <string name="onboarding_get_started">Inizia!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">Ops, nessuna connessione Internet</string>
+    <string name="no_internet_message">Assicurati che il Wi-Fi o i dati cellulari siano attivi, poi riprova.</string>
+    <string name="no_internet_go_settings">Vai alle impostazioni</string>
+
+    <!-- Permission -->
+    <string name="permission_title">Autorizzazione</string>
+    <string name="permission_message">%1$s richiede l\'accesso per offrirti il miglior servizio possibile</string>
+    <string name="permission_camera">Fotocamera</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Illumina ovunque, in qualsiasi momento.</string>
+    <string name="home_led_label">Sezione principale</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">Gioca ora!</string>
+    <string name="home_led_speed">Velocità: %1$ds</string>
+    <string name="home_led_rgb">RGB Multicolore</string>
+    <string name="home_custom_text">Testo personalizzato →</string>
+    <string name="home_led_default_marquee">⚡ BENVENUTO ALLA SERATA DI CONCERTO ⚡ • MODALITÀ FESTA ATTIVA • SCORRIMENTO LED</string>
+    <string name="home_flash_title">Flash</string>
+    <string name="home_flash_desc">Modalità Flash, SOS e DJ</string>
+    <string name="home_flash_action">Esplora modalità</string>
+    <string name="home_alert_title">Allarme Flash</string>
+    <string name="home_alert_desc">Chiamate e notifiche</string>
+    <string name="home_alert_action">Configura avvisi</string>
+    <string name="home_screenlight_title">Screenlight</string>
+    <string name="home_screenlight_desc">Luce soffusa e lampada colorata per la lettura</string>
+    <string name="home_preset">Preset:</string>
+    <string name="home_adjust">Regola</string>
+    <string name="home_edge_title">Edge Lighting</string>
+    <string name="home_edge_desc">Luci sui bordi del telefono e impulso sulla tacca</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">Fotocamera</string>
+    <string name="home_settings_cd">Impostazioni</string>
+
+    <!-- Flash -->
+    <string name="flash_title">Flash</string>
+    <string name="flash_tab_light">Torcia</string>
+    <string name="flash_tab_sos">Luce SOS</string>
+    <string name="flash_tab_dj">Modalità DJ</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">Chiudi fotocamera</string>
+    <string name="camera_capture_cd">Scatta foto</string>
+    <string name="camera_torch_cd">Attiva/disattiva torcia</string>
+    <string name="camera_zoom_in_cd">Aumenta zoom</string>
+    <string name="camera_zoom_out_cd">Riduci zoom</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">Luminosità</string>
+    <string name="screenlight_fullscreen_cd">Schermo intero</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">Colore personalizzato</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">Testo</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">Dimensione carattere</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">Velocità di scorrimento</string>
+    <string name="led_direction">Direzione</string>
+    <string name="led_visual_effects">Effetti visivi</string>
+    <string name="led_effect_glow">Luminescenza</string>
+    <string name="led_effect_blink">Lampeggio</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Dissolvenza</string>
+    <string name="led_add_background_cd">Aggiungi immagine di sfondo</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">Allarme Flash</string>
+    <string name="alert_calls">Chiamate in arrivo</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">Notifica</string>
+    <string name="alert_item_hint">Tocca per altre impostazioni</string>
+    <string name="alert_flashing_speed">Velocità lampeggio</string>
+    <string name="alert_flashing_on">Lampeggio ON</string>
+    <string name="alert_flashing_off">Lampeggio OFF</string>
+    <string name="alert_select_app">Seleziona app</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">Edge Lighting</string>
+    <string name="edge_enable">Attiva Edge Lighting per iniziare</string>
+    <string name="edge_border_style">Stile bordo</string>
+    <string name="edge_style_weather">Meteo e natura</string>
+    <string name="edge_style_arrow">Freccia</string>
+    <string name="edge_style_commerce">Commercio</string>
+    <string name="edge_run_style">Stile di scorrimento</string>
+    <string name="edge_run_none">Nessuno</string>
+    <string name="edge_run_rotation">Rotazione</string>
+    <string name="edge_run_run">Scorrimento</string>
+    <string name="edge_run_r_run">Scorrimento R</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">Bordo</string>
+    <string name="edge_top_radius">Raggio superiore</string>
+    <string name="edge_bottom_radius">Raggio inferiore</string>
+    <string name="edge_width">Larghezza</string>
+    <string name="edge_color_speed">Velocità colore</string>
+    <string name="edge_notch_style">Stile tacca</string>
+    <string name="edge_notch_full">Intera</string>
+    <string name="edge_notch_water">Goccia</string>
+    <string name="edge_add_color_title">Aggiungi colore bordo</string>
+    <string name="edge_add_color_desc">Imposta il colore del tuo effetto bordo</string>
+    <string name="edge_edit_color_title">Modifica colore bordo</string>
+    <string name="edge_edit_color_desc">Scegli un colore per personalizzare il tuo effetto Edge Lighting</string>
+    <string name="edge_display_mode_title">Scegli modalità di visualizzazione</string>
+    <string name="edge_display_mode_desc">Seleziona dove deve apparire l\'effetto Edge Lighting sul tuo dispositivo.</string>
+    <string name="edge_mode_home">Schermata Home</string>
+    <string name="edge_mode_lock">Schermata di blocco</string>
+    <string name="edge_mode_overlay">Sovrapponi a tutte le app</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_language">Lingua</string>
+    <string name="settings_share">Condividi</string>
+    <string name="settings_rate">Valuta l\'app</string>
+    <string name="settings_privacy">Informativa sulla privacy</string>
+    <string name="settings_policy">Impostazioni sulla privacy</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">Ti piace %1$s?</string>
+    <string name="rate_0_message">Il tuo feedback ci aiuta a migliorare! Dedica un momento per valutare la tua esperienza.</string>
+    <string name="rate_1_title">Oh no! Ci dispiace sentirlo.</string>
+    <string name="rate_1_message">Il tuo feedback è fondamentale per migliorare. Puoi dirci cosa non ha funzionato?</string>
+    <string name="rate_2_title">Che delusione!</string>
+    <string name="rate_2_message">Cosa potremmo fare per ottenere 5 stelle da te?</string>
+    <string name="rate_3_title">Grazie per il feedback!</string>
+    <string name="rate_3_message">Ci piacerebbe sapere come possiamo migliorare la tua esperienza.</string>
+    <string name="rate_4_title">Grazie per il tuo supporto!</string>
+    <string name="rate_4_message">Siamo felici che tu stia apprezzando l\'app! Le recensioni pubbliche ci aiutano a crescere.</string>
+    <string name="rate_5_title">Fantastico! Ci hai reso felici!</string>
+    <string name="rate_5_message">La tua soddisfazione rende utile tutto il nostro lavoro.</string>
 </resources>

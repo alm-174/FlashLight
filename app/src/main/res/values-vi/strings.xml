@@ -1,4 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Chung -->
+    <string name="common_back">Quay lại</string>
+    <string name="common_close">Đóng</string>
+    <string name="common_cancel">Hủy</string>
+    <string name="common_save">Lưu</string>
+    <string name="common_apply">Áp dụng</string>
+    <string name="common_choose">Chọn</string>
+    <string name="common_done">Xong</string>
+    <string name="common_next">Tiếp theo</string>
+    <string name="common_continue">Tiếp tục</string>
+    <string name="common_submit">Gửi</string>
+    <string name="common_edit">Sửa</string>
+    <string name="common_select_all">Chọn tất cả</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">Màu</string>
+    <string name="common_background">Hình nền</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">Trạng thái: Đang bật</string>
+    <string name="common_status_off">Trạng thái: Đang tắt</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Flashlight</string>
+
+    <!-- Language -->
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="language_choose_title">Chọn ngôn ngữ</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Đèn pin sáng mạnh</string>
+    <string name="onboarding_1_desc">Biến điện thoại thành đèn pin sáng mạnh mọi lúc.</string>
+    <string name="onboarding_2_title">Đèn SOS &amp; DJ</string>
+    <string name="onboarding_2_desc">Bật SOS khi khẩn cấp hoặc đèn DJ khi tiệc tùng.</string>
+    <string name="onboarding_3_title">Đèn màn hình đổi màu</string>
+    <string name="onboarding_3_desc">Biến màn hình thành đèn sáng, nhiều màu sắc.</string>
+    <string name="onboarding_4_title">Băng chữ LED tùy chỉnh</string>
+    <string name="onboarding_4_desc">Hiển thị chữ LED chạy với màu và hiệu ứng tùy chỉnh.</string>
+    <string name="onboarding_get_started">Bắt đầu!</string>
+
+    <!-- Không có mạng -->
+    <string name="no_internet_title">Ôi, không có kết nối Internet</string>
+    <string name="no_internet_message">Hãy đảm bảo wifi hoặc dữ liệu di động đang bật rồi thử lại.</string>
+    <string name="no_internet_go_settings">Đi tới Cài đặt</string>
+
+    <!-- Quyền -->
+    <string name="permission_title">Quyền truy cập</string>
+    <string name="permission_message">%1$s cần quyền truy cập để mang lại dịch vụ tốt nhất cho bạn</string>
+    <string name="permission_camera">Camera</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Chiếu sáng mọi lúc, mọi nơi.</string>
+    <string name="home_led_label">Khu vực nổi bật</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">Chạy ngay!</string>
+    <string name="home_led_speed">Tốc độ: %1$ds</string>
+    <string name="home_led_rgb">Đa màu RGB</string>
+    <string name="home_custom_text">Chữ tùy chỉnh →</string>
+    <string name="home_led_default_marquee">⚡ WELCOME TO CONCERT NIGHT ⚡ • PARTY MODE ON • LED SCROLLER</string>
+    <string name="home_flash_title">Flash</string>
+    <string name="home_flash_desc">Chế độ Flash, SOS &amp; DJ</string>
+    <string name="home_flash_action">Khám phá chế độ</string>
+    <string name="home_alert_title">Flash Alert</string>
+    <string name="home_alert_desc">Cuộc gọi &amp; Thông báo</string>
+    <string name="home_alert_action">Thiết lập cảnh báo</string>
+    <string name="home_screenlight_title">Screenlight</string>
+    <string name="home_screenlight_desc">Đèn dịu nhẹ &amp; đèn đọc sách đổi màu</string>
+    <string name="home_preset">Có sẵn:</string>
+    <string name="home_adjust">Chỉnh</string>
+    <string name="home_edge_title">Edge Lighting</string>
+    <string name="home_edge_desc">Đèn viền màn hình &amp; nhịp sáng notch</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">Camera</string>
+    <string name="home_settings_cd">Cài đặt</string>
+
+    <!-- Flash -->
+    <string name="flash_title">Flash</string>
+    <string name="flash_tab_light">Flash Light</string>
+    <string name="flash_tab_sos">SOS Light</string>
+    <string name="flash_tab_dj">DJ Mode</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">Đóng camera</string>
+    <string name="camera_capture_cd">Chụp ảnh</string>
+    <string name="camera_torch_cd">Bật/tắt đèn flash</string>
+    <string name="camera_zoom_in_cd">Phóng to</string>
+    <string name="camera_zoom_out_cd">Thu nhỏ</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">Độ sáng</string>
+    <string name="screenlight_fullscreen_cd">Toàn màn hình</string>
+
+    <!-- Bộ chọn màu -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">Màu tùy chỉnh</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">Văn bản</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">Cỡ chữ</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">Tốc độ chạy</string>
+    <string name="led_direction">Hướng</string>
+    <string name="led_visual_effects">Hiệu ứng hình ảnh</string>
+    <string name="led_effect_glow">Glow</string>
+    <string name="led_effect_blink">Blink</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Fade</string>
+    <string name="led_add_background_cd">Thêm ảnh nền</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">Flash Alert</string>
+    <string name="alert_calls">Cuộc gọi đến</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">Thông báo</string>
+    <string name="alert_item_hint">Nhấn để xem thêm cài đặt</string>
+    <string name="alert_flashing_speed">Tốc độ nháy</string>
+    <string name="alert_flashing_on">Nháy sáng</string>
+    <string name="alert_flashing_off">Nháy tắt</string>
+    <string name="alert_select_app">Chọn ứng dụng</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">Edge Lighting</string>
+    <string name="edge_enable">Bật Edge Lighting để bắt đầu</string>
+    <string name="edge_border_style">Kiểu viền</string>
+    <string name="edge_style_weather">Thời tiết &amp; Thiên nhiên</string>
+    <string name="edge_style_arrow">Mũi tên</string>
+    <!-- TODO: xác nhận tên nhóm thứ 3 của Border Style -->
+    <string name="edge_style_commerce">Thương mại</string>
+    <string name="edge_run_style">Kiểu chạy</string>
+    <string name="edge_run_none">Không</string>
+    <string name="edge_run_rotation">Xoay</string>
+    <string name="edge_run_run">Chạy</string>
+    <string name="edge_run_r_run">R Run</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">Viền</string>
+    <string name="edge_top_radius">Bo góc trên</string>
+    <string name="edge_bottom_radius">Bo góc dưới</string>
+    <string name="edge_width">Độ dày</string>
+    <string name="edge_color_speed">Tốc độ đổi màu</string>
+    <string name="edge_notch_style">Kiểu notch</string>
+    <string name="edge_notch_full">Toàn phần</string>
+    <string name="edge_notch_water">Water</string>
+    <string name="edge_add_color_title">Thêm màu viền</string>
+    <string name="edge_add_color_desc">Chọn màu cho hiệu ứng viền của bạn</string>
+    <string name="edge_edit_color_title">Sửa màu viền</string>
+    <string name="edge_edit_color_desc">Chọn màu để cá nhân hóa hiệu ứng Edge Lighting</string>
+    <string name="edge_display_mode_title">Chọn chế độ hiển thị</string>
+    <string name="edge_display_mode_desc">Chọn nơi hiệu ứng Edge Lighting sẽ hiển thị trên thiết bị của bạn.</string>
+    <string name="edge_mode_home">Màn hình chính</string>
+    <string name="edge_mode_lock">Màn hình khóa</string>
+    <string name="edge_mode_overlay">Hiện trên mọi ứng dụng</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_share">Chia sẻ</string>
+    <string name="settings_rate">Đánh giá ứng dụng</string>
+    <string name="settings_privacy">Chính sách bảo mật</string>
+    <string name="settings_policy">Cài đặt chính sách</string>
+
+    <!-- Hộp thoại đánh giá: 0-5 sao -->
+    <string name="rate_0_title">Bạn có thích %1$s không?</string>
+    <string name="rate_0_message">Phản hồi của bạn giúp chúng tôi cải thiện! Hãy dành chút thời gian đánh giá trải nghiệm của bạn.</string>
+    <string name="rate_1_title">Rất tiếc! Chúng tôi xin lỗi vì điều đó.</string>
+    <string name="rate_1_message">Phản hồi của bạn rất quan trọng để chúng tôi cải thiện. Bạn có thể cho biết điều gì chưa tốt không?</string>
+    <string name="rate_2_title">Thật đáng buồn!</string>
+    <string name="rate_2_message">Chúng tôi cần làm gì để nhận được 5 sao từ bạn?</string>
+    <string name="rate_3_title">Cảm ơn phản hồi của bạn!</string>
+    <string name="rate_3_message">Chúng tôi muốn biết làm sao để cải thiện trải nghiệm của bạn hơn nữa.</string>
+    <string name="rate_4_title">Cảm ơn sự ủng hộ của bạn!</string>
+    <string name="rate_4_message">Chúng tôi rất vui vì bạn thích ứng dụng! Đánh giá công khai giúp chúng tôi phát triển.</string>
+    <string name="rate_5_title">Tuyệt vời! Bạn đã làm ngày của chúng tôi thêm tươi đẹp!</string>
+    <string name="rate_5_message">Sự hài lòng của bạn khiến mọi nỗ lực của chúng tôi trở nên đáng giá.</string>
 </resources>

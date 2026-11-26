@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">戻る</string>
+    <string name="common_close">閉じる</string>
+    <string name="common_cancel">キャンセル</string>
+    <string name="common_save">保存</string>
+    <string name="common_apply">適用</string>
+    <string name="common_choose">選択</string>
+    <string name="common_done">完了</string>
+    <string name="common_next">次へ</string>
+    <string name="common_continue">続ける</string>
+    <string name="common_submit">送信</string>
+    <string name="common_edit">編集</string>
+    <string name="common_select_all">すべて選択</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">テスト</string>
+    <string name="common_color">カラー</string>
+    <string name="common_background">背景</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">ステータス: オン</string>
+    <string name="common_status_off">ステータス: オフ</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Flashlight</string>
+
+    <!-- Language -->
+    <string name="language_title">言語</string>
+    <string name="language_choose_title">言語を選択</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">明るいフラッシュライト</string>
+    <string name="onboarding_1_desc">スマホを強力なフラッシュライトとしていつでも使えます。</string>
+    <string name="onboarding_2_title">SOS &amp; DJフラッシュ</string>
+    <string name="onboarding_2_desc">緊急時にSOSを起動したり、パーティーでDJフラッシュを使ったりできます。</string>
+    <string name="onboarding_3_title">カラースクリーンライト</string>
+    <string name="onboarding_3_desc">画面を明るくカラフルなライトに変えます。</string>
+    <string name="onboarding_4_title">カスタムLEDバナー</string>
+    <string name="onboarding_4_desc">好きな色とエフェクトでLEDの文字をスクロール表示します。</string>
+    <string name="onboarding_get_started">はじめる!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">インターネットに接続されていません</string>
+    <string name="no_internet_message">Wi-Fiまたはモバイルデータがオンになっているか確認して、もう一度お試しください。</string>
+    <string name="no_internet_go_settings">設定を開く</string>
+
+    <!-- Permission -->
+    <string name="permission_title">権限</string>
+    <string name="permission_message">%1$s は最適なサービスを提供するためにアクセス許可を求めています</string>
+    <string name="permission_camera">カメラ</string>
+
+    <!-- Home -->
+    <string name="home_tagline">いつでも、どこでも明かりを。</string>
+    <string name="home_led_label">ヒーローセクション</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">今すぐ再生!</string>
+    <string name="home_led_speed">速度: %1$d秒</string>
+    <string name="home_led_rgb">RGBマルチカラー</string>
+    <string name="home_custom_text">カスタムテキスト →</string>
+    <string name="home_led_default_marquee">⚡ コンサートナイトへようこそ ⚡ • パーティーモードオン • LEDスクローラー</string>
+    <string name="home_flash_title">フラッシュ</string>
+    <string name="home_flash_desc">フラッシュ、SOS &amp; DJモード</string>
+    <string name="home_flash_action">モードを見る</string>
+    <string name="home_alert_title">フラッシュアラート</string>
+    <string name="home_alert_desc">電話 &amp; 通知</string>
+    <string name="home_alert_action">アラートを設定</string>
+    <string name="home_screenlight_title">スクリーンライト</string>
+    <string name="home_screenlight_desc">やわらかい光 &amp; 読書用カラーランプ</string>
+    <string name="home_preset">プリセット:</string>
+    <string name="home_adjust">調整</string>
+    <string name="home_edge_title">エッジライティング</string>
+    <string name="home_edge_desc">画面の縁の光 &amp; ノッチの点滅</string>
+    <string name="home_edge_effect">オーラレインボーFX</string>
+    <string name="home_camera_cd">カメラ</string>
+    <string name="home_settings_cd">設定</string>
+
+    <!-- Flash -->
+    <string name="flash_title">フラッシュ</string>
+    <string name="flash_tab_light">フラッシュライト</string>
+    <string name="flash_tab_sos">SOSライト</string>
+    <string name="flash_tab_dj">DJモード</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">カメラを閉じる</string>
+    <string name="camera_capture_cd">写真を撮る</string>
+    <string name="camera_torch_cd">フラッシュライトを切り替える</string>
+    <string name="camera_zoom_in_cd">ズームイン</string>
+    <string name="camera_zoom_out_cd">ズームアウト</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">スクリーンライト</string>
+    <string name="screenlight_brightness">明るさ</string>
+    <string name="screenlight_fullscreen_cd">全画面表示</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">カスタムカラー</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">テキスト</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">フォントサイズ</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">スクロール速度</string>
+    <string name="led_direction">方向</string>
+    <string name="led_visual_effects">ビジュアルエフェクト</string>
+    <string name="led_effect_glow">グロー</string>
+    <string name="led_effect_blink">ブリンク</string>
+    <string name="led_effect_neon">ネオン</string>
+    <string name="led_effect_fade">フェード</string>
+    <string name="led_add_background_cd">背景画像を追加</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">フラッシュアラート</string>
+    <string name="alert_calls">着信</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">通知</string>
+    <string name="alert_item_hint">タップして詳細設定</string>
+    <string name="alert_flashing_speed">点滅速度</string>
+    <string name="alert_flashing_on">点滅ON</string>
+    <string name="alert_flashing_off">点滅OFF</string>
+    <string name="alert_select_app">アプリを選択</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">エッジライティング</string>
+    <string name="edge_enable">エッジライティングを有効にして開始</string>
+    <string name="edge_border_style">ボーダースタイル</string>
+    <string name="edge_style_weather">天気 &amp; 自然</string>
+    <string name="edge_style_arrow">矢印</string>
+    <string name="edge_style_commerce">コマース</string>
+    <string name="edge_run_style">ランスタイル</string>
+    <string name="edge_run_none">なし</string>
+    <string name="edge_run_rotation">回転</string>
+    <string name="edge_run_run">ラン</string>
+    <string name="edge_run_r_run">Rラン</string>
+    <string name="edge_run_crawler">クローラー</string>
+    <string name="edge_run_r_crawler">Rクローラー</string>
+    <string name="edge_run_snake">スネーク</string>
+    <string name="edge_run_r_snake">Rスネーク</string>
+    <string name="edge_border">ボーダー</string>
+    <string name="edge_top_radius">上の角の丸み</string>
+    <string name="edge_bottom_radius">下の角の丸み</string>
+    <string name="edge_width">幅</string>
+    <string name="edge_color_speed">カラースピード</string>
+    <string name="edge_notch_style">ノッチスタイル</string>
+    <string name="edge_notch_full">フル</string>
+    <string name="edge_notch_water">ウォーター</string>
+    <string name="edge_add_color_title">ボーダーカラーを追加</string>
+    <string name="edge_add_color_desc">エッジエフェクトの色を設定します</string>
+    <string name="edge_edit_color_title">ボーダーカラーを編集</string>
+    <string name="edge_edit_color_desc">エッジライティングエフェクトをカスタマイズする色を選択してください</string>
+    <string name="edge_display_mode_title">表示モードを選択</string>
+    <string name="edge_display_mode_desc">エッジライティングエフェクトを表示する場所を選択してください。</string>
+    <string name="edge_mode_home">ホーム画面</string>
+    <string name="edge_mode_lock">ロック画面</string>
+    <string name="edge_mode_overlay">すべてのアプリに重ねて表示</string>
+
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_share">シェア</string>
+    <string name="settings_rate">アプリを評価</string>
+    <string name="settings_privacy">プライバシーポリシー</string>
+    <string name="settings_policy">ポリシー設定</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">%1$s は好きですか?</string>
+    <string name="rate_0_message">フィードバックは改善に役立ちます! 少しだけお時間をいただき、ご感想をお聞かせください。</string>
+    <string name="rate_1_title">それは残念です。</string>
+    <string name="rate_1_message">改善のためにあなたのフィードバックが重要です。何がうまくいかなかったか教えていただけますか?</string>
+    <string name="rate_2_title">悲しいです!</string>
+    <string name="rate_2_message">5つ星の評価をいただくには、どうすればよいでしょうか?</string>
+    <string name="rate_3_title">フィードバックありがとうございます!</string>
+    <string name="rate_3_message">より良い体験にする方法を知りたいです。</string>
+    <string name="rate_4_title">ご支援ありがとうございます!</string>
+    <string name="rate_4_message">アプリを楽しんでいただけて嬉しいです! 公開レビューは成長の助けになります。</string>
+    <string name="rate_5_title">すごい! 最高の一日になりました!</string>
+    <string name="rate_5_message">あなたの満足が私たちの努力すべての価値です。</string>
 </resources>

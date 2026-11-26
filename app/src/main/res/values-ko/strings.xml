@@ -1,4 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FlashLight</string>
+
+    <!-- Common -->
+    <string name="common_back">뒤로</string>
+    <string name="common_close">닫기</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_save">저장</string>
+    <string name="common_apply">적용</string>
+    <string name="common_choose">선택</string>
+    <string name="common_done">완료</string>
+    <string name="common_next">다음</string>
+    <string name="common_continue">계속</string>
+    <string name="common_submit">제출</string>
+    <string name="common_edit">편집</string>
+    <string name="common_select_all">전체 선택</string>
+    <string name="common_on">ON</string>
+    <string name="common_off">OFF</string>
+    <string name="common_test">TEST</string>
+    <string name="common_color">색상</string>
+    <string name="common_background">배경</string>
+    <string name="common_percent">%1$d%%</string>
+    <string name="common_seconds">%1$ss</string>
+    <string name="common_status_on">상태: 켜짐</string>
+    <string name="common_status_off">상태: 꺼짐</string>
+
+    <!-- Splash -->
+    <string name="splash_title">Flashlight</string>
+
+    <!-- Language -->
+    <string name="language_title">언어</string>
+    <string name="language_choose_title">언어 선택</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">밝은 손전등</string>
+    <string name="onboarding_1_desc">언제든지 휴대폰을 강력한 손전등으로 사용하세요.</string>
+    <string name="onboarding_2_title">SOS &amp; DJ 플래시</string>
+    <string name="onboarding_2_desc">긴급 상황에는 SOS, 파티에서는 DJ 플래시를 사용하세요.</string>
+    <string name="onboarding_3_title">컬러 스크린 라이트</string>
+    <string name="onboarding_3_desc">화면을 밝고 화려한 조명으로 바꿔보세요.</string>
+    <string name="onboarding_4_title">커스텀 LED 배너</string>
+    <string name="onboarding_4_desc">색상과 효과를 직접 꾸민 LED 스크롤 텍스트를 표시하세요.</string>
+    <string name="onboarding_get_started">시작하기!</string>
+
+    <!-- No internet -->
+    <string name="no_internet_title">인터넷에 연결되어 있지 않습니다</string>
+    <string name="no_internet_message">Wi-Fi 또는 모바일 데이터가 켜져 있는지 확인한 후 다시 시도하세요.</string>
+    <string name="no_internet_go_settings">설정으로 이동</string>
+
+    <!-- Permission -->
+    <string name="permission_title">권한</string>
+    <string name="permission_message">%1$s에서 최상의 서비스를 제공하기 위해 접근 권한을 요청합니다</string>
+    <string name="permission_camera">카메라</string>
+
+    <!-- Home -->
+    <string name="home_tagline">언제 어디서나 빛을 밝혀보세요.</string>
+    <string name="home_led_label">히어로 섹션</string>
+    <string name="home_led_title">LED</string>
+    <string name="home_play_now">바로 재생!</string>
+    <string name="home_led_speed">속도: %1$ds</string>
+    <string name="home_led_rgb">RGB 멀티 컬러</string>
+    <string name="home_custom_text">텍스트 커스텀 →</string>
+    <string name="home_led_default_marquee">⚡ WELCOME TO CONCERT NIGHT ⚡ • PARTY MODE ON • LED SCROLLER</string>
+    <string name="home_flash_title">플래시</string>
+    <string name="home_flash_desc">플래시, SOS &amp; DJ 모드</string>
+    <string name="home_flash_action">모드 둘러보기</string>
+    <string name="home_alert_title">플래시 알림</string>
+    <string name="home_alert_desc">전화 &amp; 알림</string>
+    <string name="home_alert_action">알림 설정하기</string>
+    <string name="home_screenlight_title">스크린라이트</string>
+    <string name="home_screenlight_desc">부드러운 조명 &amp; 독서용 컬러 램프</string>
+    <string name="home_preset">프리셋:</string>
+    <string name="home_adjust">조정</string>
+    <string name="home_edge_title">엣지 라이팅</string>
+    <string name="home_edge_desc">화면 테두리 조명 &amp; 노치 펄스</string>
+    <string name="home_edge_effect">Aura Rainbow FX</string>
+    <string name="home_camera_cd">카메라</string>
+    <string name="home_settings_cd">설정</string>
+
+    <!-- Flash -->
+    <string name="flash_title">플래시</string>
+    <string name="flash_tab_light">플래시 라이트</string>
+    <string name="flash_tab_sos">SOS 라이트</string>
+    <string name="flash_tab_dj">DJ 모드</string>
+
+    <!-- Camera -->
+    <string name="camera_close_cd">카메라 닫기</string>
+    <string name="camera_capture_cd">사진 촬영</string>
+    <string name="camera_torch_cd">손전등 켜기/끄기</string>
+    <string name="camera_zoom_in_cd">확대</string>
+    <string name="camera_zoom_out_cd">축소</string>
+
+    <!-- Screen Light -->
+    <string name="screenlight_title">ScreenLight</string>
+    <string name="screenlight_brightness">밝기</string>
+    <string name="screenlight_fullscreen_cd">전체 화면</string>
+
+    <!-- Color picker -->
+    <string name="color_picker_hex">HEX</string>
+    <string name="color_picker_r">R</string>
+    <string name="color_picker_g">G</string>
+    <string name="color_picker_b">B</string>
+    <string name="color_picker_palette_cd">사용자 지정 색상</string>
+
+    <!-- LED -->
+    <string name="led_title">LED</string>
+    <string name="led_text">텍스트</string>
+    <string name="led_default_text">HELLO WORLD</string>
+    <string name="led_font_size">글꼴 크기</string>
+    <string name="led_font_size_value">%1$dpx</string>
+    <string name="led_scroll_speed">스크롤 속도</string>
+    <string name="led_direction">방향</string>
+    <string name="led_visual_effects">비주얼 효과</string>
+    <string name="led_effect_glow">Glow</string>
+    <string name="led_effect_blink">Blink</string>
+    <string name="led_effect_neon">Neon</string>
+    <string name="led_effect_fade">Fade</string>
+    <string name="led_add_background_cd">배경 이미지 추가</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_title">플래시 알림</string>
+    <string name="alert_calls">수신 전화</string>
+    <string name="alert_sms">SMS</string>
+    <string name="alert_notification">알림</string>
+    <string name="alert_item_hint">자세한 설정은 탭하세요</string>
+    <string name="alert_flashing_speed">점멸 속도</string>
+    <string name="alert_flashing_on">점멸 ON</string>
+    <string name="alert_flashing_off">점멸 OFF</string>
+    <string name="alert_select_app">앱 선택</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_title">엣지 라이팅</string>
+    <string name="edge_enable">시작하려면 엣지 라이팅을 활성화하세요</string>
+    <string name="edge_border_style">테두리 스타일</string>
+    <string name="edge_style_weather">Weather &amp; Nature</string>
+    <string name="edge_style_arrow">Arrow</string>
+    <string name="edge_style_commerce">Commerce</string>
+    <string name="edge_run_style">실행 스타일</string>
+    <string name="edge_run_none">없음</string>
+    <string name="edge_run_rotation">Rotation</string>
+    <string name="edge_run_run">Run</string>
+    <string name="edge_run_r_run">R Run</string>
+    <string name="edge_run_crawler">Crawler</string>
+    <string name="edge_run_r_crawler">R Crawler</string>
+    <string name="edge_run_snake">Snake</string>
+    <string name="edge_run_r_snake">R Snake</string>
+    <string name="edge_border">테두리</string>
+    <string name="edge_top_radius">상단 반경</string>
+    <string name="edge_bottom_radius">하단 반경</string>
+    <string name="edge_width">너비</string>
+    <string name="edge_color_speed">색상 속도</string>
+    <string name="edge_notch_style">노치 스타일</string>
+    <string name="edge_notch_full">Full</string>
+    <string name="edge_notch_water">Water</string>
+    <string name="edge_add_color_title">테두리 색상 추가</string>
+    <string name="edge_add_color_desc">엣지 효과의 색상을 설정하세요</string>
+    <string name="edge_edit_color_title">테두리 색상 편집</string>
+    <string name="edge_edit_color_desc">엣지 라이팅 효과를 꾸밀 색상을 선택하세요</string>
+    <string name="edge_display_mode_title">표시 모드 선택</string>
+    <string name="edge_display_mode_desc">엣지 라이팅 효과가 표시될 위치를 선택하세요.</string>
+    <string name="edge_mode_home">홈 화면</string>
+    <string name="edge_mode_lock">잠금 화면</string>
+    <string name="edge_mode_overlay">모든 앱에 오버레이</string>
+
+    <!-- Settings -->
+    <string name="settings_title">설정</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_share">공유</string>
+    <string name="settings_rate">앱 평가하기</string>
+    <string name="settings_privacy">개인정보 보호정책</string>
+    <string name="settings_policy">정책 설정</string>
+
+    <!-- Rate dialog: 0-5 stars -->
+    <string name="rate_0_title">%1$s이 마음에 드시나요?</string>
+    <string name="rate_0_message">소중한 의견이 저희에게 큰 도움이 됩니다! 잠시 시간을 내어 평가해 주세요.</string>
+    <string name="rate_1_title">이런, 유감입니다.</string>
+    <string name="rate_1_message">무엇이 잘못되었는지 알려주시면 개선하는 데 큰 도움이 됩니다.</string>
+    <string name="rate_2_title">마음이 아프네요!</string>
+    <string name="rate_2_message">5점을 받으려면 저희가 무엇을 하면 좋을까요?</string>
+    <string name="rate_3_title">의견 감사합니다!</string>
+    <string name="rate_3_message">더 나은 경험을 드리기 위해 어떤 점을 개선하면 좋을지 알려주세요.</string>
+    <string name="rate_4_title">응원해 주셔서 감사합니다!</string>
+    <string name="rate_4_message">앱을 즐겨 주셔서 기쁩니다! 리뷰는 저희에게 큰 힘이 됩니다.</string>
+    <string name="rate_5_title">최고예요! 덕분에 행복한 하루예요!</string>
+    <string name="rate_5_message">만족하셨다니 저희의 노력이 헛되지 않았네요.</string>
 </resources>

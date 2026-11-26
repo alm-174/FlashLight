@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bảng màu preset dùng chung: Screen Light / LED / Edge -->
+    <array name="preset_colors">
+        <item>@color/preset_blue</item>
+        <item>@color/white</item>
+        <item>@color/preset_yellow</item>
+        <item>@color/preset_green</item>
+        <item>@color/preset_purple</item>
+        <item>@color/preset_red</item>
+    </array>
+
+    <!-- Preset ở thẻ Screenlight trên Home (5 màu cuối) -->
+    <array name="home_preset_colors">
+        <item>@color/preset_amber</item>
+        <item>@color/preset_orange</item>
+        <item>@color/preset_cyan</item>
+        <item>@color/accent_flash</item>
+        <item>@color/primary</item>
+    </array>
+
+    <!-- Onboarding OBD1-4 -->
+    <array name="onboarding_titles">
+        <item>@string/onboarding_1_title</item>
+        <item>@string/onboarding_2_title</item>
+        <item>@string/onboarding_3_title</item>
+        <item>@string/onboarding_4_title</item>
+    </array>
+    <array name="onboarding_descs">
+        <item>@string/onboarding_1_desc</item>
+        <item>@string/onboarding_2_desc</item>
+        <item>@string/onboarding_3_desc</item>
+        <item>@string/onboarding_4_desc</item>
+    </array>
+
+    <!-- Rate dialog: 0-5 sao -->
+    <array name="rate_titles">
+        <item>@string/rate_0_title</item>
+        <item>@string/rate_1_title</item>
+        <item>@string/rate_2_title</item>
+        <item>@string/rate_3_title</item>
+        <item>@string/rate_4_title</item>
+        <item>@string/rate_5_title</item>
+    </array>
+    <array name="rate_messages">
+        <item>@string/rate_0_message</item>
+        <item>@string/rate_1_message</item>
+        <item>@string/rate_2_message</item>
+        <item>@string/rate_3_message</item>
+        <item>@string/rate_4_message</item>
+        <item>@string/rate_5_message</item>
+    </array>
+
+    <!-- LED Visual Effects -->
+    <array name="led_effects">
+        <item>@string/led_effect_glow</item>
+        <item>@string/led_effect_blink</item>
+        <item>@string/led_effect_neon</item>
+        <item>@string/led_effect_fade</item>
+    </array>
+
+    <!-- Edge Lighting Run Style -->
+    <array name="edge_run_styles">
+        <item>@string/edge_run_none</item>
+        <item>@string/edge_run_rotation</item>
+        <item>@string/edge_run_run</item>
+        <item>@string/edge_run_r_run</item>
+        <item>@string/edge_run_crawler</item>
+        <item>@string/edge_run_r_crawler</item>
+        <item>@string/edge_run_snake</item>
+        <item>@string/edge_run_r_snake</item>
+    </array>
+</resources>

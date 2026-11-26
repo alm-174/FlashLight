@@ -50,8 +50,8 @@
         <item name="android:minHeight">@dimen/button_height</item>
         <item name="cornerRadius">@dimen/radius_button</item>
         <item name="android:stateListAnimator">@null</item>
-        <item name="backgroundTint">@color/primary</item>
-        <item name="android:textColor">@color/on_primary</item>
+        <item name="backgroundTint">@color/selector_button_filled_bg</item>
+        <item name="android:textColor">@color/selector_button_filled_text</item>
         <item name="android:textSize">@dimen/text_button</item>
         <item name="android:fontFamily">@font/pathway_extreme</item>
         <item name="android:textStyle">bold</item>
