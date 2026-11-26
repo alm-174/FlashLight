@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom attribute cho các custom view trong core/ui/. Thêm declare-styleable mới ở đây khi có view mới cần tuỳ biến từ XML. -->
+<resources>
+    <!-- Dùng cho NavRowView (B3): hàng icon + tiêu đề + phụ đề + giá trị + mũi tên, dùng ở Settings, Flash Alert... -->
+    <declare-styleable name="NavRowView">
+        <attr name="navIcon" format="reference" />
+        <attr name="navIconTint" format="color" />
+        <attr name="navTitle" format="string" />
+        <attr name="navSubtitle" format="string" />
+        <attr name="navValue" format="string" />
+        <attr name="showChevron" format="boolean" />
+    </declare-styleable>
+</resources>
