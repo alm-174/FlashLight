@@ -17,6 +17,11 @@
         <!-- Default button style -->
         <item name="materialButtonStyle">@style/Widget.App.Button.Filled</item>
 
+        <!-- Default style cho Switch / Slider / Chip, để chỉ cần dùng view chuẩn mà không phải ghi style= mỗi lần -->
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
+        <item name="sliderStyle">@style/Widget.App.Slider</item>
+        <item name="chipStyle">@style/Widget.App.Chip</item>
+
         <!-- Transparent status bar and navigation bar with light icons for edge-to-edge -->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>

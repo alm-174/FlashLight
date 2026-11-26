@@ -91,4 +91,56 @@
         <item name="labelBehavior">gone</item>
     </style>
 
+    <style name="Widget.App.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/surface</item>
+        <item name="chipStrokeColor">@color/selector_chip_stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/selector_chip_text</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipCornerRadius">@dimen/radius_item</item>
+    </style>
+
+    <!-- B8: nút gradient primary -> primary_gradient_end, dùng cho "Play Now!" và các nút xanh nổi bật ở Home.
+         backgroundTint phải để @null vì MaterialButton mặc định tô 1 màu phẳng đè lên android:background. -->
+    <style name="Widget.App.Button.Gradient" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@drawable/bg_button_gradient</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:fontFamily">@font/pathway_extreme</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- B8: nút nhỏ kiểu "Play Now!" / "Explore Modes" ở Home (cao button_height_small, chữ vẫn text_button).
+         Chỉ đổi kích thước; kết hợp với Outlined/Gradient tuỳ nơi dùng bằng cách set thêm android:minHeight. -->
+    <style name="Widget.App.Button.Small" parent="Widget.App.Button.Filled">
+        <item name="android:minHeight">@dimen/button_height_small</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <!-- B2: thẻ lớn ở Home (LED Hero, Screenlight...), nền layer-list bg_card_large thay cho màu phẳng.
+         cardBackgroundColor phải trong suốt vì MaterialCardView vẽ cardBackgroundColor TRÊN android:background. -->
+    <style name="Widget.App.Card.Large" parent="Widget.App.Card">
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardBackgroundColor">@color/transparent</item>
+        <item name="android:background">@drawable/bg_card_large</item>
+    </style>
+
+    <!-- B4: Switch dùng ở hàng công tắc (view_switch_row.xml). track xanh khi bật nhờ selector_switch_track. -->
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="trackTint">@color/selector_switch_track</item>
+        <item name="thumbTint">@android:color/white</item>
+        <item name="trackDecorationTint">@android:color/transparent</item>
+    </style>
+
 </resources>

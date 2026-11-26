@@ -23,6 +23,7 @@
 
     <!-- Component heights -->
     <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_small">36dp</dimen>
 
     <!-- Corner radii bổ sung -->
     <dimen name="radius_dialog">16dp</dimen>
