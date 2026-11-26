@@ -29,3 +29,8 @@ fun <T> Flow<T>.collectOn(
 fun Context.toast(@StringRes messageRes: Int) {
     Toast.makeText(this, messageRes, Toast.LENGTH_SHORT).show()
 }
+
+// Overload cho text dựng lúc runtime (vd ghép mã màu hex) - không thể là @StringRes vì nội dung đổi theo dữ liệu.
+fun Context.toast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
