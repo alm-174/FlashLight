@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- B7 - Ô danh sách có thể chọn (ngôn ngữ, app trong Select App...).
+     Adapter chỉ cần set itemView.isSelected = true/false; tvName và ivCheck tự đổi màu/icon nhờ
+     android:duplicateParentState + 2 selector có sẵn (selector_text_selectable, selector_check_icon). -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.App.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_12">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/icon_large"
+            android:layout_height="@dimen/icon_large"
+            android:contentDescription="@null"
+            tools:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_12"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:textAppearance="@style/TextAppearance.App.Body"
+            android:textColor="@color/selector_text_selectable"
+            tools:text="English" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="@dimen/icon_medium"
+            android:contentDescription="@null"
+            android:duplicateParentState="true"
+            android:src="@drawable/selector_check_icon" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

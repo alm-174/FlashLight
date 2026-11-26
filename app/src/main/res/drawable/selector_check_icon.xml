@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Đổi icon dấu tích theo trạng thái isSelected của ô cha (item_selectable_row.xml), nhờ android:duplicateParentState. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_radio_checked" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_radio_unchecked" />
+</selector>
