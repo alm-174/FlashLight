@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <View
+        android:id="@+id/vColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_circle"
+        tools:backgroundTint="#34D399" />
+
+    <View
+        android:id="@+id/vSelectedRing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_swatch_ring"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</FrameLayout>

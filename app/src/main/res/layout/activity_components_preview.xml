@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <!-- B1: Top Bar -->
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/view_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <!-- B8: Buttons -->
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.App.Button.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Filled Button" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.App.Button.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:text="Disabled Button" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.App.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Outlined Button" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.App.Button.Gradient"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Play Now! (Gradient)"
+                app:backgroundTint="@null" />
+
+            <!-- B8: nút nhỏ (Widget.App.Button.Small), cao button_height_small thay vì button_height -->
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.App.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/home_flash_action" />
+
+            <!-- B3: NavRowView -->
+            <com.example.flashlight.core.ui.NavRowView
+                android:id="@+id/navRowSample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:navIcon="@drawable/ic_back"
+                app:navSubtitle="Tap for more settings"
+                app:navTitle="Language"
+                app:navValue="English" />
+
+            <!-- B4: SwitchRow -->
+            <include
+                android:id="@+id/switchRowSample"
+                layout="@layout/view_switch_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <!-- B2 + B5: Card + SliderRow -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.App.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <include
+                    android:id="@+id/sliderRowSample"
+                    layout="@layout/view_slider_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- B7: Selectable Row -->
+            <include
+                android:id="@+id/selectableRowSample"
+                layout="@layout/item_selectable_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <!-- B6: Color Swatch Grid -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.App.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvColors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:padding="12dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- B9: ChipGroup -->
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.App.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Glow" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.App.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blink" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.App.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neon" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.App.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fade" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- B12: Power Button -->
+            <include
+                android:id="@+id/powerButtonSample"
+                layout="@layout/view_power_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="24dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
