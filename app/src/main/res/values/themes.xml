@@ -30,4 +30,10 @@
     </style>
 
     <style name="Theme.FlashLight" parent="Base.Theme.FlashLight" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.FlashLight</item>
+    </style>
 </resources>
