@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- B12 - Nút tròn lớn ON/OFF (3 tab Flash: Flash Light / SOS / DJ).
+     tvPowerState hiện chữ ON/OFF phía trên; btnPower là PowerButtonView (core/ui/PowerButtonView.kt),
+     tự lo vòng sáng (vGlow) + màu nền theo trạng thái (vCircle) + hiệu ứng nhấn. Màn dùng nó gọi
+     btnPower.setOn(Boolean) / setIcon(@DrawableRes) và tự set text của tvPowerState. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvPowerState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_16"
+        android:textAppearance="@style/TextAppearance.App.Title"
+        app:layout_constraintBottom_toTopOf="@id/btnPower"
+        app:layout_constraintEnd_toEndOf="@id/btnPower"
+        app:layout_constraintStart_toStartOf="@id/btnPower"
+        tools:text="OFF" />
+
+    <com.example.flashlight.core.ui.PowerButtonView
+        android:id="@+id/btnPower"
+        android:layout_width="@dimen/power_button_size"
+        android:layout_height="@dimen/power_button_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/vGlow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_power_glow"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/vCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/space_12"
+            android:background="@drawable/bg_circle"
+            android:backgroundTint="@color/selector_power_circle_bg" />
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/icon_large"
+            android:layout_height="@dimen/icon_large"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_primary" />
+    </com.example.flashlight.core.ui.PowerButtonView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

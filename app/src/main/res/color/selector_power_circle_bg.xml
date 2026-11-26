@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màu nền vòng tròn nút ON/OFF (B12, PowerButtonView): bật (state_selected) = primary, tắt = surface (xám đậm). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/primary" android:state_selected="true" />
+    <item android:color="@color/surface" />
+</selector>
