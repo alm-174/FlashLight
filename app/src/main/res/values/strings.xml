@@ -65,7 +65,7 @@
     <string name="permission_camera">Camera</string>
 
     <!-- Home -->
-    <string name="home_speed_label" translatable="false">Speed:</string>
+    <string name="home_speed_label">Speed:</string>
     <string name="home_speed_value" translatable="false">5s</string>
     <string name="home_tagline">Light up anytime, anywhere.</string>
     <string name="home_led_label">Hero Section</string>
@@ -184,6 +184,10 @@
     <string name="settings_rate">Rate app</string>
     <string name="settings_privacy">Privacy policy</string>
     <string name="settings_policy">Policy setting</string>
+    <string name="share_message">Try %1$s – flashlight, LED scroller, screenlight and more: %2$s</string>
+    <string name="open_link_error">No app can open this link</string>
+    <string name="play_store_web_url" translatable="false">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="privacy_policy_url" translatable="false">https://example.com/privacy</string>
 
     <!-- Rate dialog: 0-5 stars -->
     <string name="rate_0_title">Do you like %1$s?</string>
@@ -198,4 +202,95 @@
     <string name="rate_4_message">We\'re glad you\'re enjoying the app! Public reviews help us grow.</string>
     <string name="rate_5_title">Awesome! You made our day!</string>
     <string name="rate_5_message">Your satisfaction makes all of our hard work worthwhile.</string>
+    <string name="rate_thanks_toast">Thanks for your feedback!</string>
+    <string name="rate_submit">Submit</string>
+
+    <string name="ft_back">Back</string>
+    <string name="ft_close">Close</string>
+    <string name="ft_cancel">Cancel</string>
+    <string name="ft_apply">Apply</string>
+    <string name="ft_choose">Choose</string>
+    <string name="ft_done">Done</string>
+    <string name="ft_on">ON</string>
+    <string name="ft_off">OFF</string>
+    <string name="ft_color">Color</string>
+    <string name="ft_edit">Edit</string>
+    <string name="ft_add_color">Add color</string>
+    <string name="ft_seconds">%1$ss</string>
+    <string name="ft_percent">%1$d%%</string>
+    <string name="ft_no_flash">This device has no flashlight</string>
+
+    <!-- Hộp chọn màu -->
+    <string name="picker_hex">HEX</string>
+    <string name="picker_r" translatable="false">R</string>
+    <string name="picker_g" translatable="false">G</string>
+    <string name="picker_b" translatable="false">B</string>
+    <string name="picker_add_border_title">Add Border Color</string>
+    <string name="picker_add_border_subtitle">Set the color of your edge effect</string>
+
+    <!-- Camera -->
+    <string name="camera_capture">Take photo</string>
+    <string name="camera_torch">Flashlight</string>
+    <string name="camera_zoom_in">Zoom in</string>
+    <string name="camera_zoom_out">Zoom out</string>
+    <string name="camera_saved">Photo saved to Pictures/Flashlight</string>
+    <string name="camera_save_failed">Could not save the photo</string>
+    <string name="camera_permission_needed">Camera permission is required</string>
+
+    <!-- ScreenLight -->
+    <string name="screenlight_play">Turn on screen light</string>
+
+    <!-- LED -->
+    <string name="led_text_default" translatable="false">HELLO WORLD</string>
+    <string name="led_effects">Visual Effects</string>
+    <string name="led_background">Background</string>
+    <string name="led_fullscreen">Full screen</string>
+    <string name="led_dir_right">Move right</string>
+    <string name="led_dir_left">Move left</string>
+    <string name="led_dir_down">Move down</string>
+    <string name="led_dir_up">Move up</string>
+    <string name="led_add_background">Add background from gallery</string>
+
+    <!-- Flash Alert -->
+    <string name="alert_item_subtitle">Tap for more settings</string>
+    <string name="alert_status_on">Status: On</string>
+    <string name="alert_status_off">Status: Off</string>
+    <string name="alert_select_all">Select All</string>
+    <string name="alert_test">TEST</string>
+    <string name="alert_access_title">Allow notification access</string>
+    <string name="alert_access_message">To blink the flashlight when a call, SMS or notification arrives, %1$s needs notification access. Turn it on in the next screen.</string>
+    <string name="alert_access_open">Open settings</string>
+    <string name="alert_test_number" translatable="false">0999 999 999</string>
+    <string name="alert_test_message">This is testing notification</string>
+    <string name="alert_test_now">Now</string>
+    <string name="alert_test_close">Tap anywhere to stop the test</string>
+
+    <!-- Edge Lighting -->
+    <string name="edge_notch_hole">Hole</string>
+    <string name="edge_notch_pill">Pill</string>
+    <string name="edge_edit_title">Edit Border Color</string>
+    <string name="edge_edit_subtitle">Choose a color to personalize your edge lighting effect</string>
+    <string name="edge_display_title">Choose Display Mode</string>
+    <string name="edge_display_subtitle">Select where your edge lighting effect should appear on your device</string>
+    <string name="edge_display_home">HomeScreen</string>
+    <string name="edge_display_lock">LockScreen</string>
+    <string name="edge_display_overlay">Overlay All Apps</string>
+    <string name="edge_overlay_permission">Allow \"Display over other apps\" so the edge lighting can appear on top of other apps</string>
+    <string name="edge_mode_not_ready">This display mode is not available yet</string>
+    <string name="edge_min_one_color">Keep at least one color</string>
+    <string name="edge_notification_channel">Edge Lighting</string>
+    <string name="edge_notification_text">Edge lighting is running</string>
+    <string name="edge_cat_weather">Weather &amp; Nature</string>
+    <string name="edge_cat_arrow">Arrow</string>
+    <string name="edge_cat_commerce">Commerce</string>
+    <string name="edge_cat_games">Games</string>
+    <string name="edge_cat_finance">Math &amp; Finance</string>
+    <string name="edge_cat_office">Office</string>
+    <string name="edge_cat_devices">Devices</string>
+    <string name="edge_cat_communication">Communication</string>
+    <string name="edge_cat_education">Education</string>
+    <string name="edge_cat_health">Health &amp; Wellness</string>
+    <string name="edge_cat_travel">Maps &amp; Travel</string>
+    <string name="edge_cat_media">Media</string>
+    <string name="edge_cat_people">People</string>
 </resources>
