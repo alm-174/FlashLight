@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Header dùng chung: [←]      Tiêu đề      [Hành động]
+  Dùng: <include android:id="@+id/header" layout="@layout/view_screen_header" />
+  Trong code: binding.header.tvTitle.setText(...), binding.header.btnBack.setOnClickListener { finish() }
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ft_header_height">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/ft_back"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/text_primary" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/pathway_extreme_semibold"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tvAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/pathway_extreme_medium"
+        android:padding="4dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:text="Select All"
+        tools:visibility="visible" />
+</FrameLayout>

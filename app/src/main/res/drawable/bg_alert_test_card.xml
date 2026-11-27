@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Thẻ thông báo giả ở màn Test -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#CC22262C" />
+    <corners android:radius="20dp" />
+</shape>

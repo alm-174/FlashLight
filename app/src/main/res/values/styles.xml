@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Typography -->
     <style name="TextAppearance.App.LargeTitle" parent="">
@@ -168,6 +168,103 @@
         <item name="trackTint">@color/selector_switch_track</item>
         <item name="thumbTint">@android:color/white</item>
         <item name="trackDecorationTint">@android:color/transparent</item>
+    </style>
+
+    <!-- Tiêu đề thẻ: "Brightness", "Color", "Direction"... – Medium 16 trắng -->
+    <style name="Ft.Text.CardTitle" parent="">
+        <item name="android:fontFamily">@font/pathway_extreme_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Giá trị bên phải tiêu đề: "80%", "5s", "64px" – Medium 16 xanh -->
+    <style name="Ft.Text.Value" parent="Ft.Text.CardTitle">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <!-- Nhãn phụ: "Flashing ON", "Top Radius" – Medium 14/16 xám -->
+    <style name="Ft.Text.Label" parent="Ft.Text.CardTitle">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Chữ nút chính – SemiBold 18 trắng -->
+    <style name="Ft.Text.Button" parent="">
+        <item name="android:fontFamily">@font/pathway_extreme_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Thẻ nội dung: nền surface, viền stroke, bo 12, padding 21 -->
+    <style name="Ft.Card" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ft_card_gap</item>
+        <item name="android:background">@drawable/bg_ft_card</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/ft_card_padding</item>
+    </style>
+
+    <!-- Nút chính màu xanh, cao 48, bo 12 -->
+    <style name="Ft.Button.Primary" parent="Ft.Text.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ft_button_height</item>
+        <item name="android:background">@drawable/bg_ft_button_primary</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+
+    <!-- Bo góc 8 cho ảnh (ShapeableImageView) -->
+    <style name="ShapeAppearance.Ft.Rounded8" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- Chip hiệu ứng LED: cao 42, bo tròn, chữ Regular 16 -->
+    <style name="Ft.Chip" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/led_chip_height</item>
+        <item name="android:background">@drawable/bg_ft_chip</item>
+        <item name="android:fontFamily">@font/pathway_extreme_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/ft_option_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Công tắc theo Figma: nút trắng, rãnh xanh/xám -->
+    <style name="Ft.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/bg_ft_switch_thumb</item>
+        <item name="track">@drawable/bg_ft_switch_track</item>
+        <item name="trackTint">@color/ft_switch_track</item>
+        <item name="thumbTint">@android:color/white</item>
+        <item name="switchMinWidth">44dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- Nút Run Style (Edge): cao 32, nền trắng, chọn = nền xanh -->
+    <style name="Ft.RunStyle" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/edge_run_style_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_edge_run_style</item>
+        <item name="android:fontFamily">@font/pathway_extreme_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/run_style_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Nhãn thanh trượt trong thẻ Border (Edge): Medium 14 trắng -->
+    <style name="Ft.Text.SliderLabel" parent="Ft.Text.CardTitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Activity xem toàn màn hình (Play) -->
+    <style name="Theme.App.Fullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>
     </style>
 
 </resources>

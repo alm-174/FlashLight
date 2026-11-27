@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chữ chip danh mục: chọn = chữ tối trên nền vàng, chưa chọn = trắng -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/edge_chip_selected_text" android:state_selected="true" />
+    <item android:color="@color/text_primary" />
+</selector>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/top_bar_height"
@@ -13,7 +14,8 @@
         android:layout_height="@dimen/touch_target"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="@null"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/tvTitle"

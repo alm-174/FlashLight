@@ -351,11 +351,11 @@
                     android:backgroundTint="@color/accent_blue">
 
                     <ImageView
-                        android:layout_width="@dimen/home_icon_inner"
-                        android:layout_height="@dimen/home_icon_inner"
+                        android:layout_width="20dp"
+                        android:layout_height="24dp"
                         android:layout_gravity="center"
                         android:importantForAccessibility="no"
-                        android:src="@drawable/ic_siren" />
+                        android:src="@drawable/ic_siren_home" />
                 </FrameLayout>
 
                 <TextView

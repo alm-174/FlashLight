@@ -138,5 +138,65 @@
     <dimen name="home_text_marquee">16sp</dimen>
     <dimen name="home_marquee_glow">17dp</dimen>
 
+    <!-- Settings -->
+    <dimen name="settings_header_height">48dp</dimen>
+    <dimen name="settings_row_height">56dp</dimen>
+    <dimen name="settings_row_gap">16dp</dimen>
+    <dimen name="settings_row_radius">12dp</dimen>
+    <dimen name="settings_icon_box">40dp</dimen>
+    <!-- Rate us -->
+    <dimen name="rate_card_radius">16dp</dimen>
+    <dimen name="rate_emoji">100dp</dimen>
+    <dimen name="rate_star">36dp</dimen>
+    <dimen name="rate_star_gap">16dp</dimen>
+    <dimen name="rate_button_height">48dp</dimen>
+
+    <!-- Dùng chung -->
+    <dimen name="ft_header_height">48dp</dimen>
+    <dimen name="ft_content_top">12dp</dimen>
+    <dimen name="ft_card_gap">20dp</dimen>
+    <dimen name="ft_card_radius">12dp</dimen>
+    <dimen name="ft_card_radius_large">24dp</dimen>
+    <dimen name="ft_card_padding">21dp</dimen>
+    <dimen name="ft_title_to_content">16dp</dimen>
+    <dimen name="ft_button_height">48dp</dimen>
+    <dimen name="ft_swatch">42dp</dimen>
+    <dimen name="ft_swatch_row">54dp</dimen>
+    <dimen name="ft_preview_height">192dp</dimen>
+    <dimen name="ft_pill_button_width">48dp</dimen>
+    <dimen name="ft_pill_button_height">36dp</dimen>
+
+    <!-- Flash -->
+    <dimen name="flash_tabs_height">62dp</dimen>
+    <dimen name="flash_tab_width">80dp</dimen>
+    <dimen name="flash_state_top">103dp</dimen>
+    <dimen name="flash_circle">220dp</dimen>
+    <dimen name="flash_icon">110dp</dimen>
+    <dimen name="flash_glow">300dp</dimen>
+    <dimen name="flash_ring">16dp</dimen>
+
+    <!-- Flash Alert -->
+    <dimen name="alert_item_height">72dp</dimen>
+    <dimen name="alert_circle">153dp</dimen>
+    <dimen name="alert_circle_icon">72dp</dimen>
+    <dimen name="alert_row_height">48dp</dimen>
+
+    <!-- LED / Edge -->
+    <dimen name="led_input_height">57dp</dimen>
+    <dimen name="led_direction_cell">63dp</dimen>
+    <dimen name="led_chip_height">42dp</dimen>
+    <dimen name="led_bg_item_width">86dp</dimen>
+    <dimen name="led_bg_item_height">67dp</dimen>
+    <dimen name="led_bg_add_width">72dp</dimen>
+    <dimen name="edge_icon_cell">42dp</dimen>
+    <dimen name="edge_run_style_height">32dp</dimen>
+    <dimen name="edge_notch_cell_width">66dp</dimen>
+    <dimen name="edge_notch_cell_height">62dp</dimen>
+
+    <!-- Kích thước hình trong vòng tròn 220dp – lấy số W trong Figma -->
+    <dimen name="flash_image_light">110dp</dimen>
+    <dimen name="flash_image_sos">120dp</dimen>
+    <dimen name="flash_image_dj">182dp</dimen>
+
     <dimen name="permission_illustration_width">200dp</dimen>  <!-- TODO: đúng số đo trong Figma -->
 </resources>

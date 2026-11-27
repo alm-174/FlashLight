@@ -50,10 +50,19 @@
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.flash.FlashActivity"
+            android:exported="false" />
         <!-- TODO(dev-preview): man xem thu component GD2, go khi co man Home thuc -->
         <activity
             android:name=".ui.dev.ComponentsPreviewActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <service
             android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"

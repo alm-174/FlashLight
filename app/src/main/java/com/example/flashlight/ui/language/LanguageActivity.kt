@@ -1,5 +1,6 @@
 package com.example.flashlight.ui.language
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
@@ -32,8 +33,7 @@ class LanguageActivity : AppCompatActivity() {
     private lateinit var tvSave: TextView
     private var isNavigating = false
 
-    private val fromSettings: Boolean
-        get() = intent.getBooleanExtra(EXTRA_FROM_SETTINGS, false)
+    private val fromSettings by lazy { intent.getBooleanExtra(EXTRA_FROM_SETTINGS, false) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -142,6 +142,12 @@ class LanguageActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val EXTRA_FROM_SETTINGS = "extra_from_settings"
+        private const val EXTRA_FROM_SETTINGS = "extra_from_settings"
+
+        fun newIntent(context: Context, fromSettings: Boolean = false): Intent =
+            Intent(context, LanguageActivity::class.java)
+                .putExtra(EXTRA_FROM_SETTINGS, fromSettings)
     }
+
+
 }

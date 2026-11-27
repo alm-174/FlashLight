@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ô nhập chữ LED: #353534 bo 12 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/track" />
+    <corners android:radius="@dimen/ft_card_radius" />
+</shape>

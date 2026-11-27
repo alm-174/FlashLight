@@ -27,6 +27,7 @@
     <color name="disabled_bg">#A4ACB9</color>
     <color name="radio_ring">#A5AEBA</color>
     <color name="switch_off">#666D80</color>
+    <color name="disabled">#3A3F47</color>
 
     <!-- Màu riêng & Màu nhấn Home -->
     <color name="accent_blue">#60A5FA</color>
@@ -108,4 +109,50 @@
     <color name="home_led_dot">#44937D</color>
     <color name="home_play_start">#93FFD8</color>
     <color name="home_play_text">#1A1B25</color>
+
+    <color name="rate_star_empty">#CDD4D2</color>
+    <color name="rate_star_filled">#FFD54F</color>   <!-- TODO: kiểm tra màu sao đã chọn trong Figma -->
+
+    <!-- Nền thanh trượt, ô nhập, nút tùy chọn chưa chọn -->
+    <color name="hint">#818898</color>
+    <color name="text_tertiary_light">#A4ACB9</color>
+
+    <!-- Flash -->
+    <color name="flash_circle_off">#36394A</color>
+    <color name="flash_glow">#6634D399</color>          <!-- primary 40% -->
+    <color name="flash_icon">#111111</color>
+
+    <!-- Camera -->
+    <color name="camera_button_bg">#99221111</color>
+
+    <!-- LED -->
+    <color name="led_default_text">#FFD54F</color>
+    <color name="option_selected_bg">#1AFFD54F</color>  <!-- #FFD54F 10% -->
+    <color name="led_input_text">#ECEFF3</color>
+
+    <!-- Công tắc: tắt = #666D80 -->
+    <color name="ft_switch_off">#666D80</color>
+
+    <!-- Flash Alert -->
+    <color name="alert_call">#34C759</color>
+    <color name="alert_sms">#0A84FF</color>
+    <color name="alert_notification">#34D399</color>
+    <color name="alert_test_top">#05061A</color>
+    <color name="alert_test_bottom">#3B1C8C</color>
+
+    <!-- Edge Lighting -->
+    <color name="edge_chip_selected">#FFD54F</color>
+    <color name="edge_chip_selected_text">#1A1B25</color>
+    <color name="edge_icon_cell">#646B7D</color>
+    <color name="edge_icon_cell_selected">#80FFD54F</color>
+    <color name="run_style_bg">#FFFFFF</color>
+    <color name="run_style_text">#1A1B25</color>
+    <color name="notch_cell">#111111</color>
+
+    <!-- Hộp chọn màu (nền sáng, theo Figma) -->
+    <color name="picker_bg">#FCFCFC</color>
+    <color name="picker_stroke">#E0E0E0</color>
+    <color name="picker_text">#141414</color>
+    <color name="picker_field_stroke">#EEEEEE</color>
+    <color name="picker_subtitle">#818898</color>
 </resources>

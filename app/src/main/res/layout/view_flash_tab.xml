@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Một tab: icon 24 + chữ Medium 14 + gạch chân 80x2 (chỉ hiện khi chọn) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/flash_tab_width"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:importantForAccessibility="no"
+        tools:src="@drawable/ic_flashlight" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/pathway_extreme_medium"
+        android:maxLines="1"
+        android:textSize="14sp"
+        tools:text="Flash Light"
+        tools:textColor="@color/primary" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_flash_tab_indicator"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+</LinearLayout>

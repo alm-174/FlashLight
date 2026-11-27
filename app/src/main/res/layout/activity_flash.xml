@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Màn Flash (Figma: Flash Light_Off / SOS Light_Off / DJ Mode_Off ...)
+  ┌ thanh trên nền #22262C: ← Flash  +  3 tab ┐
+  └ vùng chứa Fragment của tab đang chọn       ┘
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.flash.FlashActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/view_screen_header" />
+
+        <!-- 3 tab 80dp, dàn đều 2 bên (Figma: space-between, lề 16) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flash_tabs_height"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding">
+
+            <include
+                android:id="@+id/tabLight"
+                layout="@layout/view_flash_tab"
+                android:layout_width="@dimen/flash_tab_width"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/tabSos"
+                layout="@layout/view_flash_tab"
+                android:layout_width="@dimen/flash_tab_width"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/tabDj"
+                layout="@layout/view_flash_tab"
+                android:layout_width="@dimen/flash_tab_width"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

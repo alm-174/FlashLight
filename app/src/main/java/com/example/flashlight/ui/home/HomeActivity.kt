@@ -1,5 +1,6 @@
 package com.example.flashlight.ui.home
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.SystemBarStyle
@@ -11,6 +12,8 @@ import androidx.core.view.updatePadding
 import com.example.flashlight.R
 import com.example.flashlight.core.ui.DotGridDrawable
 import com.example.flashlight.databinding.ActivityHomeBinding
+import com.example.flashlight.ui.flash.FlashActivity
+import com.example.flashlight.ui.settings.SettingsActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -65,10 +68,14 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setupClicks() {
         binding.btnCamera.setOnClickListener { /* TODO GĐ 8: mở CameraActivity */ }
-        binding.btnSettings.setOnClickListener { /* TODO GĐ 4: mở SettingsActivity */ }
+        binding.btnSettings.setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+        }
         binding.btnPlayNow.setOnClickListener { /* TODO GĐ 7: mở LedPlayActivity */ }
         binding.tvCustomText.setOnClickListener { /* TODO GĐ 7: mở LedActivity */ }
-        binding.btnExploreModes.setOnClickListener { /* TODO GĐ 5: mở FlashActivity */ }
+        binding.btnExploreModes.setOnClickListener {
+            startActivity(Intent(this, FlashActivity::class.java))
+        }
         binding.btnSetUpAlerts.setOnClickListener { /* TODO GĐ 9: mở FlashAlertActivity */ }
         binding.btnScreenlightOpen.setOnClickListener { /* TODO GĐ 6: mở ScreenLightActivity */ }
         binding.tvAdjust.setOnClickListener { /* TODO GĐ 6: mở ScreenLightActivity */ }
