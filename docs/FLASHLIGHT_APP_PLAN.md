@@ -31,7 +31,7 @@ Kèm theo: Camera (soi/kính lúp có đèn), Settings (ngôn ngữ, chia sẻ, 
 
 | Frame | Nội dung | Ghi chú |
 |---|---|---|
-| **Splash** | Nền gradient xanh, logo + chữ "Flashlight" | Dùng Android SplashScreen API |
+| **Splash** | Nền gradient xanh, logo + chữ "Flashlight" | Dùng Android SplashScreen API; Logo 110dp + chữ FlashLight 24 Bold; trong Figma cụm logo nằm CAO HƠN tâm màn hình (đỉnh ở y=247/800) – xung đột với icon splash hệ thống luôn ở tâm, chờ người hướng dẫn chọn |
 | **Language** | Tiêu đề "Language", danh sách 11 ngôn ngữ có cờ + nút tròn chọn | Chưa chọn thì **chưa có** nút Save |
 | **Language_Select** | Như trên, đã chọn 1 ngôn ngữ → hiện nút **Save** góc phải | Cùng một màn, chỉ khác trạng thái |
 | **OBD1–OBD4** | 4 trang giới thiệu: Bright Flashlight → SOS & DJ Flash → Color Screen Light → Custom LED Banner. Có chấm chỉ trang, nút **Next**, trang cuối **Get Started!** | Nửa dưới mỗi trang trống: chỗ dành cho quảng cáo native **(cần xác nhận)** |
@@ -53,7 +53,7 @@ Một màn **cuộn dọc**, **không có thanh tab dưới**:
 
 | Frame | Nội dung |
 |---|---|
-| Flash Light_Off / _On | Tiêu đề "Flash", **3 tab trên**: Flash Light · SOS Light · DJ Mode. Giữa màn là nút tròn lớn, chữ OFF/ON, sáng xanh khi bật |
+| Flash Light_Off / _On | Tiêu đề 'Flash' và 3 tab (Flash Light · SOS Light · DJ Mode) nằm trong MỘT khối nền #22262C; nút tròn 220dp giữa màn, OFF xám / ON xanh |
 | SOS Light_Off / _On | Tab SOS, icon đèn báo động |
 | DJ Mode_Off / _On | Tab DJ, icon quả cầu disco |
 | Camera | Xem camera toàn màn hình, thanh zoom (− / +), nút **X**, nút **chụp**, nút **bật đèn** |
@@ -111,7 +111,7 @@ Một màn **cuộn dọc**, **không có thanh tab dưới**:
 | **Button** | Nút đặc nhỏ, nút đặc to, nút có icon, nút xám "Share" | Bộ style nút (như `Widget.LoveTester.Button.*` bạn đã làm) |
 | **Frame 1707478416** | 4 trạng thái ô ngôn ngữ: thường, đã chọn, viền nét đứt, sáng | `item_language.xml` + selector |
 | **Icon** | Bộ icon "Regular / Light (Border)" | Xuất SVG → Vector Asset |
-| **fill name** | Công tắc "Turn on Floating Ball" | **(cần xác nhận)**: không thấy màn nào dùng |
+| **fill name** | Hàng công tắc (nhãn + switch), mặc định chữ 'Turn on Floating Ball'; dùng ở màn Permission (Camera) → component B4 trong UI guide | |
 
 ---
 
@@ -350,7 +350,7 @@ Phần Service làm sau cùng, khi giao diện đã ổn.
 1. App có **quảng cáo** không? (khoảng trống dưới các trang OBD, mục "Policy setting" gợi ý là có)
 2. Màn **Test** của Flash Alert là màn riêng hay hộp thoại toàn màn hình?
 3. **No internet**: hiện ở đâu và lúc nào (chỉ ở Splash hay mọi màn)? Dùng bản toàn màn hình hay hộp thoại?
-4. Component **fill name** ("Turn on Floating Ball") dùng ở đâu?
+4. Logo splash giữ đúng vị trí Figma (cao hơn tâm) hay dời về tâm để khớp splash hệ thống?
 5. **DJ Mode** nháy theo nhịp cố định hay theo âm thanh micro? (theo micro thì cần thêm quyền RECORD_AUDIO)
 6. **Edge Lighting** sáng liên tục, hay chỉ sáng khi có thông báo?
 7. Nút **Play Now!** ở thẻ LED trên Home chạy với chữ mặc định hay chữ người dùng đã lưu?

@@ -8,6 +8,8 @@ Bộ tài liệu gồm 3 file, dùng cùng nhau:
 | `UI_IMPLEMENTATION_GUIDE.md` | **Dựng giao diện** từng màn và từng component thế nào |
 | `WORKFLOW_GUIDE.md` (file này) | **Làm theo thứ tự nào**, mỗi giai đoạn làm gì, xong thì kiểm tra gì |
 
+UI_IMPLEMENTATION_GUIDE.md đã được cập nhật theo số đo đọc trực tiếp từ Figma – luôn ưu tiên số trong file đó.
+
 Ký hiệu tham chiếu: **[Plan 4.2]** = mục 4.2 trong `FLASHLIGHT_APP_PLAN.md`; **[UI B5]** = mục B5 trong `UI_IMPLEMENTATION_GUIDE.md`.
 
 ---
@@ -120,7 +122,7 @@ Tạo `ui/dev/ComponentsPreviewActivity` (chỉ để xem, xoá trước khi ph�
 | 2 | Thẻ | style `Widget.App.Card` | [UI B2] |
 | 3 | Thanh trên cùng | `view_top_bar.xml` | [UI B1] |
 | 4 | Hàng chọn | `NavRowView.kt` + `view_nav_row.xml` + `attrs.xml` | [UI B3] |
-| 5 | Hàng công tắc | `view_switch_row.xml` + style Switch | [UI B4] |
+| 5 | Hàng công tắc | `view_switch_row.xml` + style Switch (component 'fill name' trong Figma) | [UI B4] |
 | 6 | Hàng thanh trượt | `view_slider_row.xml` + style Slider | [UI B5] |
 | 7 | Ô danh sách có lựa chọn | `item_selectable.xml` + selector | [UI B7] |
 | 8 | Lưới màu | `item_color_swatch.xml` + `ColorSwatchAdapter` | [UI B6] |
@@ -146,7 +148,7 @@ Hộp thoại chọn màu (B10) và đánh giá (B11) để tới giai đoạn d
 
 | Màn | Điểm chính |
 |---|---|
-| Splash | Đọc `onboardingStep`, mở đúng màn tiếp theo, `finish()`. Hỏi người hướng dẫn về splash gradient [UI C1] |
+| Splash | Đọc `onboardingStep`, mở đúng màn tiếp theo, `finish()`. Hỏi người hướng dẫn về splash gradient [UI C1]. Vị trí logo: tạm để ở tâm, chờ quyết định (xem Phần 3) |
 | Language | `LanguageViewModel` giữ ngôn ngữ đang chọn (sống qua xoay). Save → `setApplicationLocales` → bước tiếp. Hỗ trợ `EXTRA_FROM_SETTINGS` ngay từ đầu |
 | Onboarding | ViewPager2 + **1** `OnboardingPageFragment` nhận arguments; chấm chỉ trang; Next / Get Started |
 | Permission | Công tắc Camera → xin quyền → bật công tắc + mở khoá Continue khi được cấp |
@@ -310,14 +312,14 @@ pin không tụt bất thường (vẽ quá nhiều khung hình).
 
 | Trước GĐ | Hỏi người hướng dẫn |
 |---|---|
-| 3 | Splash có cần giống y Figma (gradient + chữ) không? App có quảng cáo không? |
+| 3 | Splash có cần giống y Figma (gradient + chữ) không? App có quảng cáo không? Logo splash giữ đúng vị trí Figma hay dời về tâm? |
 | 3 | Xin quyền Camera ở màn Permission hay khi mở Camera? |
 | 5 | Rời màn Flash / chuyển tab thì đèn tắt hay giữ? DJ theo nhịp cố định hay theo nhạc (micro)? |
 | 7 | Play Now ở Home dùng chữ mặc định hay chữ đã lưu? |
 | 8 | Nút chụp có lưu ảnh không? |
 | 9 | Màn Test là màn riêng hay hộp thoại? Flash Alert có cần chạy sau khi khởi động lại máy? |
 | 10 | Edge sáng liên tục hay chỉ khi có thông báo? |
-| 11 | No internet hiện ở đâu? Component "fill name" (Floating Ball) dùng ở đâu? |
+| 11 | No internet hiện ở đâu? |
 
 ---
 
