@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1 trang Onboarding (OBD1-4): ảnh full-bleed (tràn hết chiều rộng) cố định theo tỉ lệ H,360:436,
+     tiêu đề + mô tả căn giữa ngay dưới ảnh. Root KHÔNG padding ngang vì ảnh phải full-width;
+     tvTitle/tvDescription tự có margin ngang riêng (onboarding_content_padding). -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivIllustration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="H,360:436"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher" />
+
+    <!-- Lớp mờ dần vào nền ở đáy ảnh, đè đúng khung ảnh -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_onboarding_fade"
+        app:layout_constraintBottom_toBottomOf="@id/ivIllustration"
+        app:layout_constraintEnd_toEndOf="@id/ivIllustration"
+        app:layout_constraintStart_toStartOf="@id/ivIllustration"
+        app:layout_constraintTop_toTopOf="@id/ivIllustration" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/onboarding_content_padding"
+        android:layout_marginTop="@dimen/onboarding_title_gap"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.App.Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIllustration"
+        tools:text="Super Bright Flashlight" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/onboarding_content_padding"
+        android:layout_marginTop="@dimen/onboarding_desc_gap"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.App.Body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Turn your phone into a powerful flashlight instantly." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

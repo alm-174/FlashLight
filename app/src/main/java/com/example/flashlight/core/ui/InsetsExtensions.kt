@@ -42,6 +42,27 @@ fun View.applySystemBarsPadding() {
     ViewCompat.requestApplyInsets(this)
 }
 
+/**
+ * Chi pad phan navigation bar (+ cutout) o DUOI, dung cho man full-bleed anh tran len status bar
+ * (vd Onboarding): status bar khong duoc padding de anh nam duoi no, chi phan noi dung cuoi man
+ * (nhu adContainer) can tranh nav bar.
+ */
+fun View.applyBottomSystemBarsPadding() {
+    val startLeft = paddingLeft
+    val startTop = paddingTop
+    val startRight = paddingRight
+    val startBottom = paddingBottom
+
+    ViewCompat.setOnApplyWindowInsetsListener(this) { view, windowInsets ->
+        val bars = windowInsets.getInsets(
+            WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
+        )
+        view.setPadding(startLeft, startTop, startRight, startBottom + bars.bottom)
+        windowInsets
+    }
+    ViewCompat.requestApplyInsets(this)
+}
+
 fun View.applySystemBarsAndImePadding() {
     val startLeft = paddingLeft
     val startTop = paddingTop
