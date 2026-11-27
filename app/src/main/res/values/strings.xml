@@ -65,6 +65,8 @@
     <string name="permission_camera">Camera</string>
 
     <!-- Home -->
+    <string name="home_speed_label" translatable="false">Speed:</string>
+    <string name="home_speed_value" translatable="false">5s</string>
     <string name="home_tagline">Light up anytime, anywhere.</string>
     <string name="home_led_label">Hero Section</string>
     <string name="home_led_title">LED</string>

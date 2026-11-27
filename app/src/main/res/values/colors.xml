@@ -73,4 +73,39 @@
     <!-- Splash -->
     <color name="splash_background">#3DD598</color>
     <color name="splash_logo_placeholder">#D9D9D9</color>
+
+
+    <!-- Home: biến thể trong suốt (2 ký tự đầu là độ trong suốt) -->
+    <color name="black_3">#08000000</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="primary_25">#4034D399</color>
+    <color name="accent_flash_20">#33CE60FA</color>
+    <color name="accent_blue_15">#2660A5FA</color>
+    <color name="accent_blue_20">#3360A5FA</color>
+    <color name="accent_blue_25">#4060A5FA</color>
+    <color name="accent_blue_30">#4D60A5FA</color>
+
+    <!-- Home: thẻ LED -->
+    <color name="home_marquee_bg">#05060D</color>
+    <color name="home_led_label">#B3DDD6FE</color>       <!-- #DDD6FE 70% -->
+    <color name="home_led_divider">#268B5CF6</color>     <!-- #8B5CF6 15% -->
+
+    <!-- Home: thẻ Screenlight -->
+    <color name="home_preset_label">#94A3B8</color>
+    <color name="home_preset_1">#FDE68A</color>
+    <color name="home_preset_2">#F97316</color>
+    <color name="home_preset_3">#22D3EE</color>
+    <color name="home_preset_4">#C084FC</color>
+    <color name="home_preset_5">#34D399</color>
+
+    <!-- Home: thẻ Edge -->
+    <color name="home_edge_start">#B31E1B4B</color>      <!-- #1E1B4B 70% -->
+    <color name="home_edge_center">#99190A24</color>     <!-- #190A24 60% -->
+    <color name="home_edge_stroke">#4DC084FC</color>     <!-- #C084FC 30% -->
+    <color name="home_edge_divider">#33A855F7</color>    <!-- #A855F7 20% -->
+
+    <color name="home_led_dot">#44937D</color>
+    <color name="home_play_start">#93FFD8</color>
+    <color name="home_play_text">#1A1B25</color>
 </resources>

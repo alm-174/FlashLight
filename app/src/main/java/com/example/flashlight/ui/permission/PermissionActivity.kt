@@ -15,8 +15,8 @@ import com.example.flashlight.MainActivity
 import com.example.flashlight.R
 import com.example.flashlight.core.ui.applySystemBarsPadding
 import com.example.flashlight.databinding.ActivityPermissionBinding
+import com.example.flashlight.ui.home.HomeActivity
 import dagger.hilt.android.AndroidEntryPoint
-
 @AndroidEntryPoint
 class PermissionActivity : AppCompatActivity() {
 
@@ -27,7 +27,13 @@ class PermissionActivity : AppCompatActivity() {
 
     private val cameraLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
-    ) {
+    ) { granted ->
+        // Trước và sau đều không cần "giải thích" + bị từ chối → hệ thống KHÔNG hiện hộp thoại
+        // → quyền đã bị từ chối hẳn từ trước → chỉ còn cách vào Cài đặt.
+        val rationaleAfter = shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)
+        if (!granted && !viewModel.rationaleBeforeRequest && !rationaleAfter) {
+            openAppSettings()
+        }
         render()
     }
 
@@ -44,13 +50,14 @@ class PermissionActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        render()
+        render()   // quay lại từ Cài đặt (cấp hoặc thu hồi quyền) → cập nhật ngay
     }
 
+    /** Chỉ gán những gì phụ thuộc dữ liệu/chuỗi có tham số. Ảnh tĩnh đặt trong XML. */
     private fun setupViews() {
         binding.tvMessage.text = getString(
             R.string.permission_message,
-            getString(R.string.app_name)
+            getString(R.string.splash_title)
         )
         binding.rowCamera.tvLabel.setText(R.string.permission_camera)
     }
@@ -64,39 +71,30 @@ class PermissionActivity : AppCompatActivity() {
             if (isNavigating) return@setOnClickListener
             isNavigating = true
             viewModel.completePermissionStep {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))
                 finish()
             }
         }
     }
 
     private fun handleSwitchChanged(isChecked: Boolean) {
-        if (isChecked) {
-            if (isCameraGranted()) {
-                render()
-            } else {
-                requestCameraOrOpenSettings()
-            }
-        } else {
-            // App không tự thu hồi quyền được: gạt tắt thì bật lại
-            render()
+        val granted = isCameraGranted()
+        when {
+            // Bật khi chưa có quyền → xin quyền
+            isChecked && !granted -> requestCamera()
+            // Tắt khi đang có quyền → app không tự thu hồi được, mở Cài đặt để người dùng tự tắt
+            !isChecked && granted -> openAppSettings()
         }
+        render()   // công tắc luôn trở về đúng trạng thái quyền THẬT
     }
 
-    private fun requestCameraOrOpenSettings() {
-        val permanentlyDenied = viewModel.hasRequestedCamera &&
-                !shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)
-
-        if (permanentlyDenied) {
-            openAppSettings()
-            render()
-        } else {
-            viewModel.hasRequestedCamera = true
-            cameraLauncher.launch(Manifest.permission.CAMERA)
-            render()
-        }
+    private fun requestCamera() {
+        viewModel.rationaleBeforeRequest =
+            shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)
+        cameraLauncher.launch(Manifest.permission.CAMERA)
     }
 
+    /** Nơi DUY NHẤT gán trạng thái công tắc và nút Continue. */
     private fun render() {
         val granted = isCameraGranted()
         binding.rowCamera.switchStatus.setOnCheckedChangeListener(null)
@@ -108,16 +106,15 @@ class PermissionActivity : AppCompatActivity() {
     }
 
     private fun isCameraGranted(): Boolean =
-        ContextCompat.checkSelfPermission(
-            this,
-            Manifest.permission.CAMERA
-        ) == PackageManager.PERMISSION_GRANTED
+        ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) ==
+                PackageManager.PERMISSION_GRANTED
 
     private fun openAppSettings() {
-        val intent = Intent(
-            Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-            Uri.fromParts("package", packageName, null)
+        startActivity(
+            Intent(
+                Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                Uri.fromParts("package", packageName, null)
+            )
         )
-        startActivity(intent)
     }
 }

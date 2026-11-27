@@ -13,6 +13,7 @@ import com.example.flashlight.MainActivity
 import com.example.flashlight.data.settings.OnboardingStep
 import com.example.flashlight.data.settings.SettingsRepository
 import com.example.flashlight.databinding.ActivitySplashBinding
+import com.example.flashlight.ui.home.HomeActivity
 import com.example.flashlight.ui.language.LanguageActivity
 import com.example.flashlight.ui.onboarding.OnboardingActivity
 import com.example.flashlight.ui.permission.PermissionActivity
@@ -72,7 +73,7 @@ class SplashActivity : AppCompatActivity() {
             OnboardingStep.LANGUAGE -> LanguageActivity::class.java  // → LanguageActivity
             OnboardingStep.INTRO -> OnboardingActivity::class.java      // → OnboardingActivity
             OnboardingStep.PERMISSION -> PermissionActivity::class.java // → PermissionActivity
-            OnboardingStep.DONE -> MainActivity::class.java       // → HomeActivity
+            OnboardingStep.DONE -> HomeActivity::class.java       // → HomeActivity
         }
         return Intent(this, target)
     }

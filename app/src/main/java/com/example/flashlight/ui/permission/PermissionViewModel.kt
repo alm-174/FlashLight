@@ -13,7 +13,7 @@ class PermissionViewModel @Inject constructor(
     private val settingsRepository: SettingsRepository
 ) : ViewModel() {
 
-    var hasRequestedCamera: Boolean = false
+    var rationaleBeforeRequest: Boolean = false
 
     fun completePermissionStep(onDone: () -> Unit) {
         viewModelScope.launch {

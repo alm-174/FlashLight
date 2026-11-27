@@ -96,4 +96,47 @@
     <dimen name="onboarding_dot_width_inactive">8dp</dimen>
     <dimen name="onboarding_dot_width_active">24dp</dimen>
     <dimen name="onboarding_dot_margin">8dp</dimen>
+
+    <!-- Home -->
+    <dimen name="home_header_button">40dp</dimen>
+    <dimen name="home_header_button_gap">8dp</dimen>
+    <dimen name="home_header_to_card">19dp</dimen>
+    <dimen name="home_card_gap">16dp</dimen>
+    <dimen name="home_card_radius">24dp</dimen>
+    <dimen name="home_card_padding">12dp</dimen>
+    <dimen name="home_hero_padding_vertical">8dp</dimen>
+    <dimen name="home_hero_glow">140dp</dimen>
+    <dimen name="home_icon_led">40dp</dimen>
+    <dimen name="home_icon_feature">44dp</dimen>
+    <dimen name="home_icon_inner">24dp</dimen>
+    <dimen name="home_icon_radius">12dp</dimen>
+    <dimen name="home_icon_radius_large">16dp</dimen>
+    <dimen name="home_play_now_width">100dp</dimen>
+    <dimen name="home_small_button_height">36dp</dimen>
+    <dimen name="home_arrow_button">36dp</dimen>
+    <dimen name="home_arrow_radius">16dp</dimen>
+    <dimen name="home_marquee_radius">16dp</dimen>
+    <dimen name="home_marquee_padding">12dp</dimen>
+    <dimen name="home_section_gap">12dp</dimen>
+    <dimen name="home_inner_gap">8dp</dimen>
+    <dimen name="home_dot">4dp</dimen>
+    <dimen name="home_preset_slot">32dp</dimen>
+    <dimen name="home_preset_dot">24dp</dimen>
+    <dimen name="home_rainbow_height">12dp</dimen>
+    <dimen name="home_bottom_space">24dp</dimen>
+
+    <!-- Home: cỡ chữ -->
+    <dimen name="home_text_title">18sp</dimen>
+    <dimen name="home_text_card_title">16sp</dimen>
+    <dimen name="home_text_caption">12sp</dimen>
+    <dimen name="home_text_small">11sp</dimen>
+
+    <dimen name="home_marquee_height">62dp</dimen>
+    <dimen name="home_led_dot_size">1dp</dimen>
+    <dimen name="home_led_dot_gap_x">3dp</dimen>
+    <dimen name="home_led_dot_gap_y">4dp</dimen>
+    <dimen name="home_text_marquee">16sp</dimen>
+    <dimen name="home_marquee_glow">17dp</dimen>
+
+    <dimen name="permission_illustration_width">200dp</dimen>  <!-- TODO: đúng số đo trong Figma -->
 </resources>
