@@ -9,10 +9,10 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
-import com.example.flashlight.MainActivity
 import com.example.flashlight.R
 import com.example.flashlight.core.ui.applyBottomSystemBarsPadding
 import com.example.flashlight.databinding.ActivityOnboardingBinding
+import com.example.flashlight.ui.permission.PermissionActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -80,7 +80,7 @@ class OnboardingActivity : AppCompatActivity() {
                 if (isNavigating) return@setOnClickListener
                 isNavigating = true
                 viewModel.completeOnboarding {
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, PermissionActivity::class.java))
                     finish()
                 }
             }

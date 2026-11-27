@@ -15,6 +15,7 @@ import com.example.flashlight.data.settings.SettingsRepository
 import com.example.flashlight.databinding.ActivitySplashBinding
 import com.example.flashlight.ui.language.LanguageActivity
 import com.example.flashlight.ui.onboarding.OnboardingActivity
+import com.example.flashlight.ui.permission.PermissionActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
@@ -70,7 +71,7 @@ class SplashActivity : AppCompatActivity() {
         val target = when (step) {
             OnboardingStep.LANGUAGE -> LanguageActivity::class.java  // → LanguageActivity
             OnboardingStep.INTRO -> OnboardingActivity::class.java      // → OnboardingActivity
-            OnboardingStep.PERMISSION -> MainActivity::class.java // → PermissionActivity
+            OnboardingStep.PERMISSION -> PermissionActivity::class.java // → PermissionActivity
             OnboardingStep.DONE -> MainActivity::class.java       // → HomeActivity
         }
         return Intent(this, target)

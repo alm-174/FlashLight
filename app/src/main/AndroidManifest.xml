@@ -47,7 +47,9 @@
         <activity
             android:name=".ui.permission.PermissionActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:exported="false" />
         <!-- TODO(dev-preview): man xem thu component GD2, go khi co man Home thuc -->
         <activity
             android:name=".ui.dev.ComponentsPreviewActivity"

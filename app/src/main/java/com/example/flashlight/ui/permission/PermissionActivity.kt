@@ -1,5 +1,123 @@
 package com.example.flashlight.ui.permission
 
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Bundle
+import android.provider.Settings
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.example.flashlight.MainActivity
+import com.example.flashlight.R
+import com.example.flashlight.core.ui.applySystemBarsPadding
+import com.example.flashlight.databinding.ActivityPermissionBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class PermissionActivity : AppCompatActivity()
+@AndroidEntryPoint
+class PermissionActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityPermissionBinding
+    private val viewModel: PermissionViewModel by viewModels()
+
+    private var isNavigating = false
+
+    private val cameraLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) {
+        render()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        binding = ActivityPermissionBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.root.applySystemBarsPadding()
+
+        setupViews()
+        setupListeners()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        render()
+    }
+
+    private fun setupViews() {
+        binding.tvMessage.text = getString(
+            R.string.permission_message,
+            getString(R.string.app_name)
+        )
+        binding.rowCamera.tvLabel.setText(R.string.permission_camera)
+    }
+
+    private fun setupListeners() {
+        binding.rowCamera.root.setOnClickListener {
+            binding.rowCamera.switchStatus.toggle()
+        }
+
+        binding.btnContinue.setOnClickListener {
+            if (isNavigating) return@setOnClickListener
+            isNavigating = true
+            viewModel.completePermissionStep {
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+        }
+    }
+
+    private fun handleSwitchChanged(isChecked: Boolean) {
+        if (isChecked) {
+            if (isCameraGranted()) {
+                render()
+            } else {
+                requestCameraOrOpenSettings()
+            }
+        } else {
+            // App không tự thu hồi quyền được: gạt tắt thì bật lại
+            render()
+        }
+    }
+
+    private fun requestCameraOrOpenSettings() {
+        val permanentlyDenied = viewModel.hasRequestedCamera &&
+                !shouldShowRequestPermissionRationale(Manifest.permission.CAMERA)
+
+        if (permanentlyDenied) {
+            openAppSettings()
+            render()
+        } else {
+            viewModel.hasRequestedCamera = true
+            cameraLauncher.launch(Manifest.permission.CAMERA)
+            render()
+        }
+    }
+
+    private fun render() {
+        val granted = isCameraGranted()
+        binding.rowCamera.switchStatus.setOnCheckedChangeListener(null)
+        binding.rowCamera.switchStatus.isChecked = granted
+        binding.rowCamera.switchStatus.setOnCheckedChangeListener { _, isChecked ->
+            handleSwitchChanged(isChecked)
+        }
+        binding.btnContinue.isEnabled = granted
+    }
+
+    private fun isCameraGranted(): Boolean =
+        ContextCompat.checkSelfPermission(
+            this,
+            Manifest.permission.CAMERA
+        ) == PackageManager.PERMISSION_GRANTED
+
+    private fun openAppSettings() {
+        val intent = Intent(
+            Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+            Uri.fromParts("package", packageName, null)
+        )
+        startActivity(intent)
+    }
+}
