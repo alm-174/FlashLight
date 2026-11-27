@@ -23,11 +23,11 @@
 
     <!-- Accent colors theo tính năng (icon vuông, viền thẻ, nút viền ở Home) -->
     <color name="accent_led">@color/primary</color>
-    <color name="accent_flash">#C084FC</color> <!-- TODO: lấy từ Figma (thẻ Flash, tím) -->
+    <color name="accent_flash">#C084FC</color>
     <color name="accent_alert">#60A5FA</color>
     <color name="accent_screenlight">#60A5FA</color>
-    <color name="accent_edge">#E879F9</color> <!-- TODO: lấy từ Figma (thẻ Edge Lighting, tím hồng) -->
-    <color name="accent_sos">#EF4444</color> <!-- TODO: lấy từ Figma (icon đèn báo động) -->
+    <color name="accent_edge">#E879F9</color>
+    <color name="accent_sos">#EF4444</color>
 
     <!-- Accent colors alpha 25% (viền thẻ) -->
     <color name="accent_led_25">#4034D399</color>
@@ -54,6 +54,8 @@
     <color name="preset_amber">#FDE68A</color> <!-- TODO: đo lại từ Figma -->
     <color name="preset_orange">#F97316</color> <!-- TODO: đo lại từ Figma -->
     <color name="preset_cyan">#22D3EE</color> <!-- TODO: đo lại từ Figma -->
-    <!-- preset_violet không tạo mới: trùng @color/accent_flash -->
-    <!-- preset_mint không tạo mới: trùng @color/primary -->
+
+    <!-- Splash -->
+    <color name="splash_background">#3DD598</color>
+    <color name="splash_logo_placeholder">#D9D9D9</color>
 </resources>
