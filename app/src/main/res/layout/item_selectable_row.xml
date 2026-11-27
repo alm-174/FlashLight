@@ -15,10 +15,10 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="12dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="8dp"
-        android:paddingBottom="8dp">
+        android:paddingStart="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingEnd="@dimen/space_8"
+        android:paddingBottom="@dimen/space_8">
 
         <ImageView
             android:id="@+id/ivIcon"

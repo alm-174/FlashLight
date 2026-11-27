@@ -30,6 +30,7 @@ class LanguageActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLanguageBinding
     private val viewModel: LanguageViewModel by viewModels()
     private lateinit var tvSave: TextView
+    private var isNavigating = false
 
     private val fromSettings: Boolean
         get() = intent.getBooleanExtra(EXTRA_FROM_SETTINGS, false)
@@ -51,10 +52,11 @@ class LanguageActivity : AppCompatActivity() {
         binding.topBar.btnBack.setOnClickListener { finish() }
 
         tvSave = TextView(this).apply {
+            setTextAppearance(R.style.TextAppearance_App_Subhead)
             setTextColor(ContextCompat.getColor(context, R.color.primary))
-            textSize = 14f
             gravity = Gravity.CENTER
-            setPadding(16, 0, 16, 0)
+            val padX = resources.getDimensionPixelSize(R.dimen.space_16)
+            setPadding(padX, 0, padX, 0)
             isVisible = false
             setOnClickListener { onSaveClicked() }
         }
@@ -125,16 +127,16 @@ class LanguageActivity : AppCompatActivity() {
     }
 
     private fun onSaveClicked() {
+        if (isNavigating) return
         val code = viewModel.selectedCode.value ?: return
+        isNavigating = true
         AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(code))
         if (fromSettings) {
             finish()
         } else {
             viewModel.completeLanguageStep {
-                viewModel.completeLanguageStep {
-                    startActivity(Intent(this, OnboardingActivity::class.java))
-                    finish()
-                }
+                startActivity(Intent(this, OnboardingActivity::class.java))
+                finish()
             }
         }
     }

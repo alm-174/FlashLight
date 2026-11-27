@@ -137,6 +137,25 @@
         <item name="android:textSize">@dimen/text_button_small</item>
     </style>
 
+    <!-- Nút "Next" Onboarding (B8): pill bo 999dp, cao 40dp, padding 8/16dp, nền surface, viền stroke, chữ 16sp SemiBold primary -->
+    <style name="Widget.App.Button.Pill" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="backgroundTint">@color/surface</item>
+        <item name="strokeColor">@color/stroke</item>
+        <item name="strokeWidth">@dimen/stroke_thin</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/text_subhead</item>
+        <item name="android:fontFamily">@font/pathway_extreme_semibold</item>
+        <item name="android:paddingHorizontal">@dimen/space_16</item>
+        <item name="android:paddingVertical">@dimen/space_8</item>
+    </style>
+
     <!-- B2: thẻ lớn ở Home (LED Hero, Screenlight...), nền layer-list bg_card_large thay cho màu phẳng. -->
     <style name="Widget.App.Card.Large" parent="Widget.App.Card">
         <item name="cardCornerRadius">@dimen/radius_card</item>

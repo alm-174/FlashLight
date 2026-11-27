@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
+    android:layout_width="@dimen/swatch_size"
+    android:layout_height="@dimen/swatch_size"
     android:clickable="true"
     android:focusable="true">
 
@@ -10,7 +10,7 @@
         android:id="@+id/vColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="4dp"
+        android:layout_margin="@dimen/space_4"
         android:background="@drawable/bg_circle"
         tools:backgroundTint="#34D399" />
 

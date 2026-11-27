@@ -37,17 +37,12 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" />
 
-        <TextView
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"
+            style="@style/Widget.App.Button.Pill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_round_button"
-            android:foreground="?attr/selectableItemBackground"
-            android:paddingHorizontal="@dimen/space_16"
-            android:paddingVertical="@dimen/space_8"
-            android:text="@string/common_next"
-            android:textAppearance="@style/TextAppearance.App.Body"
-            android:textColor="@color/primary" />
+            android:text="@string/common_next" />
     </LinearLayout>
 
     <!-- Chỗ trống cho quảng cáo native; chỉ view này nhận padding navigation bar (xem OnboardingActivity.kt) -->

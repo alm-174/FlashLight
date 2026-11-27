@@ -1,4 +1,5 @@
 package com.example.flashlight.ui.permission
 
-class PermissionActivity {
-}
+import androidx.appcompat.app.AppCompatActivity
+
+class PermissionActivity : AppCompatActivity()

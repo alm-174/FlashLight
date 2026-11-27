@@ -90,4 +90,10 @@
     <dimen name="onboarding_title_gap">16dp</dimen>
     <dimen name="onboarding_desc_gap">8dp</dimen>
     <dimen name="onboarding_bottom_row_padding_vertical">20dp</dimen>
+
+    <!-- Onboarding dots -->
+    <dimen name="onboarding_dot_height">8dp</dimen>
+    <dimen name="onboarding_dot_width_inactive">8dp</dimen>
+    <dimen name="onboarding_dot_width_active">24dp</dimen>
+    <dimen name="onboarding_dot_margin">8dp</dimen>
 </resources>

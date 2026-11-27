@@ -1,7 +1,6 @@
 package com.example.flashlight.ui.onboarding
 
 import android.content.Intent
-import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
@@ -21,6 +20,7 @@ class OnboardingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOnboardingBinding
     private val viewModel: OnboardingViewModel by viewModels()
+    private var isNavigating = false
 
     // Thay ảnh và string theo đúng tên resource trong dự án của bạn
     private val pages = listOf(
@@ -42,6 +42,20 @@ class OnboardingActivity : AppCompatActivity() {
         setupViewPager()
         setupDots(0)
         setupButtons()
+        setupBackNavigation()
+    }
+
+    private fun setupBackNavigation() {
+        onBackPressedDispatcher.addCallback(this, object : androidx.activity.OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val current = binding.viewPager.currentItem
+                if (current > 0) {
+                    binding.viewPager.currentItem = current - 1
+                } else {
+                    finish()
+                }
+            }
+        })
     }
 
     private fun setupViewPager() {
@@ -63,6 +77,8 @@ class OnboardingActivity : AppCompatActivity() {
             if (current < pages.lastIndex) {
                 binding.viewPager.currentItem = current + 1
             } else {
+                if (isNavigating) return@setOnClickListener
+                isNavigating = true
                 viewModel.completeOnboarding {
                     startActivity(Intent(this, MainActivity::class.java))
                     finish()
@@ -73,26 +89,22 @@ class OnboardingActivity : AppCompatActivity() {
 
     private fun setupDots(selectedIndex: Int) {
         binding.layoutDots.removeAllViews()
-        val density = resources.displayMetrics.density
-        val heightPx = (8 * density).toInt()
-        val marginPx = (4 * density).toInt()
+        val heightPx = resources.getDimensionPixelSize(R.dimen.onboarding_dot_height)
+        val marginPx = resources.getDimensionPixelSize(R.dimen.onboarding_dot_margin)
+        val activeWidthPx = resources.getDimensionPixelSize(R.dimen.onboarding_dot_width_active)
+        val inactiveWidthPx = resources.getDimensionPixelSize(R.dimen.onboarding_dot_width_inactive)
 
         pages.indices.forEach { index ->
             val isSelected = index == selectedIndex
-            val widthPx = ((if (isSelected) 24 else 8) * density).toInt()
+            val widthPx = if (isSelected) activeWidthPx else inactiveWidthPx
             val dot = View(this).apply {
                 layoutParams = LinearLayout.LayoutParams(widthPx, heightPx).apply {
-                    marginEnd = marginPx * 2
+                    marginEnd = marginPx
                 }
-                background = GradientDrawable().apply {
-                    cornerRadius = heightPx / 2f
-                    setColor(
-                        ContextCompat.getColor(
-                            context,
-                            if (isSelected) R.color.primary else R.color.white
-                        )
-                    )
-                }
+                background = ContextCompat.getDrawable(
+                    context,
+                    if (isSelected) R.drawable.bg_dot_active else R.drawable.bg_dot_inactive
+                )
             }
             binding.layoutDots.addView(dot)
         }
