@@ -19,22 +19,77 @@ Bạn tự viết XML theo khung xương, mở Figma đo số liệu chính xác
 
 ### A2. Số liệu đã đọc từ Figma (dùng làm token)
 
-| Token | Giá trị | Ở đâu trong Figma |
+**Màu nền / viền**
+
+| Token | Giá trị |
+|---|---|
+| `background` | `#111111` |
+| `surface` | `#22262C` |
+| `stroke` | `#36394A` |
+| `input_bg` / `track` (nền ô nhập, track slider) | `#353534` |
+| `icon_cell` (nền ô icon xám) | `#666D80` |
+
+**Chữ**
+
+| Token | Giá trị |
+|---|---|
+| `text_primary` | `#FFFFFF` |
+| `text_secondary` | `#C1C7D0` |
+| `text_tertiary` | `#A4ACB9` |
+| `text_hint` | `#818898` |
+| `chip_text` | `#DFE1E7` |
+| `input_text` | `#ECEFF3` |
+| `on_accent_dark` (chữ trên nút gradient / chip vàng) | `#1A1B25` |
+
+**Chính**
+
+| Token | Giá trị |
+|---|---|
+| `primary` | `#34D399` |
+| `primary_gradient_end` | `#93FFD8` |
+| `disabled_bg` | `#A4ACB9` |
+| `radio_ring` | `#A5AEBA` |
+| `switch_off` | `#666D80` |
+
+**Màu nhấn Home**
+
+| Token | Giá trị | Ghi chú |
 |---|---|---|
-| `background` | `#111111` | layer "backround" của Homepage |
-| `surface` (nền thẻ, ô) | `#22262C` | "BG thẻ" trong ô ngôn ngữ |
-| `stroke` (viền) | `#36394A` | Greyscale/600 |
-| `primary` | `#34D399` | nút, công tắc, chữ xanh |
-| `primary_gradient_end` | `#93FFD8` | nút "Play Now!" (gradient `#34D399 → #93FFD8`) |
-| `text_primary` | `#FFFFFF` | "App Name" |
-| `text_secondary` | `#C1C7D0` | Greyscale/200, dòng phụ |
-| `text_tertiary` | `#A4ACB9` | Greyscale/300 |
-| `on_primary` | `#1A1B25` | Greyscale/800, chữ trên nút xanh |
-| Font | **Pathway Extreme** | 400 / 500 / 600 / 700 |
-| Bo góc thẻ Home | 24dp | thẻ Screenlight |
-| Bo góc ô danh sách, nút | 12dp | ô ngôn ngữ, nút Play Now |
-| Padding thẻ Home | 12 trên/dưới 16 · 12 trái/phải, gap 14 | thẻ Screenlight |
-| Chữ | 18sp SemiBold (tiêu đề), 14sp Bold (nút), 12sp Regular (phụ) | Homepage |
+| `accent_flash` | `#CE60FA` | thẻ Flash |
+| `accent_blue` | `#60A5FA` | Flash Alert, Screenlight |
+| `accent_edge` | `#9333EA` | thẻ Edge Lighting |
+| `edge_card_gradient` | `#1E1B4B@70% → #190A24@60% → #000000`, viền `#C084FC@30%` | nền thẻ Edge Lighting ở Home |
+
+**Màu riêng**
+
+| Token | Giá trị | Ghi chú |
+|---|---|---|
+| `alert_green` | `#34C759` | vòng tròn lớn màn Flash Alert |
+| `yellow` | `#FFD54F` | chip đang chọn ở Edge, chữ LED mẫu |
+
+**Preset màu**
+- Preset dùng chung (ScreenLight / LED / Edge), 7 ô: ô đầu là nút bảng màu (nền `#36394A`), 6 ô màu tiếp theo:
+  `#4FC3F7` `#FFFFFF` `#FFD54F` `#81C784` `#BA68C8` `#E57373`.
+- Preset ở Home (5 ô, không có nút bảng màu): `#FDE68A` `#F97316` `#22D3EE` `#C084FC` `#34D399`.
+
+**Font & thang chữ** (Pathway Extreme)
+
+| Dùng ở | Cỡ/kiểu | Màu |
+|---|---|---|
+| Tiêu đề màn | 18sp SemiBold | text_primary |
+| Tiêu đề thẻ / section | 16sp Medium | text_primary |
+| Giá trị bên phải (vd "English") | 16sp Medium | primary |
+| Mục danh sách | 16sp Regular | text_primary |
+| Body | 14sp Regular | text_secondary |
+| Caption | 12sp Regular | text_secondary |
+| Mô tả nhỏ ở Home | 11sp Regular | text_secondary |
+| Chữ nút | 18sp SemiBold | — |
+| Chữ ON/OFF màn Flash | 36sp SemiBold | — |
+| Splash | 24sp Bold | — |
+| Chữ preview LED | 32sp Black | — |
+
+**Bo góc**
+Nút `12dp` · thẻ cài đặt `12dp` · ô ngôn ngữ `16dp` · thẻ Home `24dp` · dialog `16dp` · chip Edge `8dp` · nút pill `999dp` (full tròn).
 
 > Màu và số nào **chưa có** trong bảng thì đo thêm theo A1 rồi thêm vào `colors.xml` / `dimens.xml`.
 > **Không** viết mã hex hay số dp trực tiếp trong layout.
@@ -85,14 +140,17 @@ Làm xong phần này, mỗi màn chỉ còn là việc ghép khối.
 | B12 | Nút tròn lớn ON/OFF | `layout/view_power_button.xml` | 3 tab Flash |
 
 ### B1. Thanh trên cùng
-```
-LinearLayout (ngang, chiều cao 56dp, gravity center_vertical)
-├── ImageButton btnBack          48×48dp, nền ?selectableItemBackgroundBorderless, icon ←
-├── TextView tvTitle             0dp + weight 1, căn giữa, TextAppearance.App.Title
-└── FrameLayout endSlot          48dp: chỗ cho nút phải (Save, Select All, phóng to…) hoặc trống
-```
-- Tiêu đề phải **căn giữa màn hình** dù bên trái có nút ← còn bên phải trống. Cách dễ nhất: **luôn chừa 48dp ở cả hai bên** (`endSlot` trống vẫn chiếm chỗ).
-- Màn Language lần đầu **ẩn** `btnBack` bằng `INVISIBLE` (không dùng `GONE`, để tiêu đề không lệch).
+Figma **không có khối nền riêng** cho top bar (trừ Flash) — tiêu đề nằm thẳng trên nền `background` của màn:
+- Tiêu đề **18sp SemiBold**, màu trắng, căn giữa, nằm ngay dưới status bar (status bar cao **~25dp**).
+- Nội dung của màn bắt đầu cách tiêu đề **24dp** phía dưới.
+- Nút hành động bên phải (nếu có) là **chữ**, không phải icon (vd "Save" **16sp Medium**, màu `primary`), lề phải **16dp**.
+- Riêng màn **Flash**: tiêu đề + 3 tab nằm trong **một khối nền `surface` (#22262C)** cao **~154dp** (tính luôn status bar) —
+  khác với mọi màn khác, không tách top bar riêng khỏi khối tab.
+
+> `view_top_bar.xml` hiện tại trong code (LinearLayout 56dp, btnBack 48dp, endSlot FrameLayout 48dp) chỉ đúng cho
+> các màn **có nút ←** (Language mở từ Settings...). Với Home/Flash/Permission không có nút ← và không có khối
+> nền riêng theo đúng Figma, dùng component này sẽ thừa phần nền/ripple không có trong Figma — cần xem lại
+> khi code thật các màn này, chưa sửa code trong lần cập nhật tài liệu này.
 
 ### B2. Thẻ (Card)
 ```xml
@@ -104,49 +162,61 @@ LinearLayout (ngang, chiều cao 56dp, gravity center_vertical)
     <item name="cardElevation">0dp</item>
 </style>
 ```
-Thẻ lớn ở Home dùng bo `radius_card` (24dp) và **nền gradient mờ** (xem màn Home).
+Số đo Figma: thẻ cài đặt viền `stroke` 1dp, bo **12dp**, padding **20dp**, khoảng cách giữa các phần tử
+ bên trong **16dp** (riêng Edge Lighting: **24dp**). Khoảng cách giữa các thẻ **20dp**. Lề màn **16dp** (thẻ rộng
+ 328dp trên frame 360dp). Thẻ lớn ở Home dùng bo `radius_card` (**24dp**) và **nền gradient mờ** (xem màn Home).
 
 ### B3. Hàng chọn (Settings, Flash Alert)
 ```
-MaterialCardView (Widget.App.Card, clickable, foreground ripple)
-└── LinearLayout ngang, padding 16dp
+MaterialCardView (Widget.App.Card, clickable, foreground ripple) — 328×56 (Settings) hoặc 328×72 (Flash Alert)
+└── LinearLayout ngang, padding trái 12dp
     ├── ImageView ivIcon          24dp
-    ├── LinearLayout dọc (0dp + weight 1, marginStart 12dp)
-    │   ├── TextView tvTitle      Body, text_primary
-    │   └── TextView tvSubtitle   Caption, text_secondary (GONE nếu không có)
-    ├── TextView tvValue          primary (ví dụ "English" ở Settings), GONE nếu không có
+    ├── LinearLayout dọc (0dp + weight 1, marginStart 16dp)
+    │   ├── TextView tvTitle      16sp Medium, text_primary
+    │   └── TextView tvSubtitle   14sp Regular, #818898 — "Tap for more settings" (chỉ Flash Alert)
+    ├── TextView tvValue          16sp Medium, primary (ví dụ "English" ở Settings), GONE nếu không có
     └── ImageView ivChevron       ›
 ```
+- Settings: cao **56dp**, bo **12dp**. Khoảng cách giữa các hàng **16dp**.
+- Flash Alert: cao **72dp** (có thêm phụ đề). Khoảng cách giữa các hàng **20dp**.
+
 Tạo **một** custom view nhỏ `NavRowView` nhận thuộc tính `app:icon`, `app:title`, `app:subtitle` (khai báo trong
 `attrs.xml`) để viết layout gọn: `<NavRowView app:title="@string/settings_share" … />`.
 Đây là bài tập tốt về **custom attribute**.
 
 ### B4. Hàng công tắc
 ```
-MaterialCardView (Widget.App.Card)
-└── LinearLayout ngang, padding 12–16dp
-    ├── TextView tvLabel          0dp + weight 1   ("Status: Off" / "Camera" / "Enable Edge Lighting to begin")
-    └── MaterialSwitch switch
+MaterialCardView (Widget.App.Card) — 328×56, bo 12dp, padding 8/12dp
+└── LinearLayout ngang, padding 8/12dp
+    ├── TextView tvLabel          0dp + weight 1, 16sp Medium trắng   ("Status: Off" / "Camera" / "Enable Edge Lighting to begin")
+    └── MaterialSwitch switch     track 44×24 bo tròn, núm 20dp trắng
 ```
-Màu công tắc theo Figma: track **xanh** khi bật, **xám** khi tắt, thumb trắng. Đặt trong theme:
+Màu công tắc theo Figma: track **primary** khi bật, **#666D80** (switch_off) khi tắt, thumb trắng. Đặt trong theme:
 ```xml
 <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
-    <item name="trackTint">@color/selector_switch_track</item>   <!-- checked: primary, mặc định: stroke -->
+    <item name="trackTint">@color/selector_switch_track</item>   <!-- checked: primary, mặc định: switch_off #666D80 -->
     <item name="thumbTint">@android:color/white</item>
     <item name="trackDecorationTint">@android:color/transparent</item>
 </style>
 ```
 Chữ "Status: Off/On" đổi theo `isChecked`: dùng **string có tham số**, không ghép chuỗi.
 
+> **Không thống nhất trong Figma**: màn Edge Lighting đang dùng 1 switch khác kiểu (50×23, nền `#EFEFEF`),
+> không khớp switch chuẩn ở trên. Vẫn dùng switch chuẩn (44×24, track primary/#666D80) cho Edge Lighting để
+> đồng bộ toàn app — không copy kiểu riêng của Edge.
+
 ### B5. Hàng thanh trượt
 ```
 LinearLayout dọc
 ├── LinearLayout ngang
-│   ├── TextView tvLabel          0dp + weight 1   ("Brightness", "Font Size", "Flashing ON")
-│   └── TextView tvValue          primary          ("80%", "64px", "0.5s")
-└── com.google.android.material.slider.Slider slider
+│   ├── TextView tvLabel          0dp + weight 1, 16sp Medium (Flash Alert: màu #C1C7D0; Edge Lighting: 14sp Medium)
+│   └── TextView tvValue          16sp Medium, primary          ("80%", "64px", "0.5s")
+└── com.google.android.material.slider.Slider slider    track cao 8dp bo 4dp màu #353534 (input_bg/track); núm 24dp tròn primary
 ```
-- Style Slider: `trackColorActive` = primary, `trackColorInactive` = stroke, `thumbColor` = primary, `trackHeight` ≈ 4dp, `labelBehavior="gone"` (Figma hiện giá trị ở bên phải chứ không có bong bóng).
+- Style Slider: `trackColorActive` = primary, `trackColorInactive` = `#353534` (input_bg/track), `thumbColor` = primary,
+  `trackHeight` = **8dp**, góc track bo **4dp**, núm **24dp**, `labelBehavior="gone"` (Figma hiện giá trị ở bên phải
+  không có bong bóng).
+- Khoảng cách nhãn → track: **16dp**. Khoảng cách giữa 2 slider (vd "Flashing ON"/"Flashing OFF"): **16dp**.
 - `valueFrom`, `valueTo`, `stepSize` khác nhau ở mỗi chỗ → đặt trong layout của từng màn, không đặt trong style.
 - Khối "Flashing Speed" của Flash Alert = tiêu đề + **2** hàng slider trong cùng một Card.
 
@@ -163,26 +233,40 @@ FrameLayout 40×40dp
 - Màu đang chọn có **vòng sáng** quanh (Figma Screen Light: ô xanh dương có viền).
 - Edge Lighting dùng nút **+** thay vì bảng màu, và có chế độ **xoá** (nút x nhỏ trên mỗi màu) trong hộp thoại Edit.
 
-### B7. Ô danh sách có lựa chọn (component "Frame 1707478416")
-Figma có 4 trạng thái: thường, **đã chọn** (chữ xanh + dấu tích xanh), và 2 bản sáng (không dùng vì app tối).
+### B7. Ô danh sách có lựa chọn (màn Language)
+Figma có 4 trạng thái: thường, **đã chọn**, và 2 bản sáng (không dùng vì app tối).
 ```
-MaterialCardView (Widget.App.Card, radius_item, padding 8/12)
+MaterialCardView (Widget.App.Card, bo 16dp, padding 8/12/8/8) — 328×60
 └── LinearLayout ngang
-    ├── ImageView ivFlag / ivAppIcon   32dp tròn
-    ├── TextView tvName                0dp + weight 1, marginStart 12dp
-    └── ImageView ivCheck              24dp: vòng rỗng hoặc tích xanh
+    ├── ImageView ivFlag               36dp tròn
+    ├── TextView tvName                0dp + weight 1, marginStart 12dp, 16sp Regular, LUÔN màu trắng (text_primary)
+    └── ImageView ivCheck              20dp
+        - Chưa chọn: vòng tròn rỗng, viền `#A5AEBA` (radio_ring) 1.5dp
+        - Đã chọn:   tròn trắng đặc, dấu tích màu tối `#141B34`
 ```
-Dùng **selector theo `state_selected`** cho màu chữ (`text_primary` → `primary`) và hình `ivCheck`.
+Khác với giả định cũ: **chữ KHÔNG đổi màu khi chọn** (vẫn trắng cả 2 trạng thái) — chỉ đổi `ivCheck`.
+Vì vậy dùng `android:duplicateParentState` + drawable-selector cho riêng `ivCheck` theo `state_selected`,
+**không** cần selector màu chữ ở ô này (`selector_text_selectable` dành cho chỗ khác thật sự đổi màu chữ,
+không dùng ở B7 này).
 Adapter chỉ cần đặt `itemView.isSelected = …` như bạn đã làm với ô cung hoàng đạo.
 
 ### B8. Nút
-Đã có Filled / Outlined từ bước setup. Thêm:
-- **`.Gradient`** cho "Play Now!" và các nút xanh nổi bật: MaterialButton không vẽ gradient bằng `backgroundTint`
-  → đặt `android:background="@drawable/bg_button_gradient"` (shape `<gradient>` primary → primary_gradient_end, bo 12dp)
-  **và** `app:backgroundTint="@null"`.
-- **Nút xám** (component Button: "Share", nút "Continue" khi chưa bật quyền): đó là trạng thái **disabled** của Filled
-  → khai báo `backgroundTint` là selector có `state_enabled="false"` = màu xám. Code chỉ cần `btnContinue.isEnabled = …`.
-- **Nút viền màu** ở Home ("Explore Modes" tím, "Set Up Alerts" xanh dương): Outlined, đổi `strokeColor` + `textColor` riêng.
+Số đo Figma chính xác cho từng loại nút:
+- **Filled**: nền `primary`, chữ **TRẮNG** 18sp SemiBold (không phải on_primary tối), cao **48dp** (Figma ghi 49),
+  bo **12dp**, padding **12/16dp**, rộng full **328dp**.
+- **Disabled**: nền `#A4ACB9` (disabled_bg), chữ trắng — không phải chữ xám, chỉ nền đổi. Khai báo
+  `backgroundTint` là selector có `state_enabled="false"` = `#A4ACB9`. Code chỉ cần `btnContinue.isEnabled = …`.
+- **Text button** (vd "Cancel"): không nền, chữ **18sp SemiBold**, màu `#C1C7D0` (text_secondary).
+- **`.Gradient`** ("Play Now!"): **100×36dp**, bo **12dp**, gradient `primary → #93FFD8`, chữ **14sp Bold**, màu
+  `#1A1B25` (on_accent_dark) — MaterialButton không vẽ gradient bằng `backgroundTint` → đặt
+  `android:background="@drawable/bg_button_gradient"` **và** `app:backgroundTint="@null"`.
+- **Nút viền màu ở Home** ("Explore Modes", "Set Up Alerts"): **130×36dp**, bo **12dp**, nền `accent@20%`,
+  viền `accent` 1dp, chữ **12sp Medium** trắng (Outlined, đổi `strokeColor` + màu nền/chữ theo từng thẻ).
+- **Nút "Next" Onboarding**: pill (bo **999dp**), cao **40dp**, padding **8/16dp**, nền `surface`, viền
+  `#36394A@45%`, chữ **16sp SemiBold** `primary`.
+- **Nút tròn header Home** (Camera/Settings): **40dp**, nền trắng@3%, viền trắng@8%.
+- **Nút mũi tên trong thẻ Home**: **36dp**, bo **16dp**, nền trắng@10%, viền trắng@20%.
+- **Nút phóng to preview** (ScreenLight/LED): **48×36dp** pill, nền `surface`, viền `stroke`.
 
 ### B9. Chip chọn một
 ```
@@ -485,3 +569,30 @@ Quy tắc đặt tên: `ic_` icon, `bg_` nền/shape, `img_` ảnh, `flag_` cờ
 9. Edge Lighting + `EdgeLightView`.
 
 **Mỗi màn xong**: chụp màn hình máy ảo đặt cạnh Figma, sửa đến khi khớp rồi mới sang màn khác.
+
+---
+
+## Lịch sử thay đổi
+
+- **2026-11-27**: Đọc lại số đo trực tiếp từ Figma, sửa các ước lượng cũ cho khớp chính xác:
+  - **A2**: viết lại toàn bộ bảng token — thêm màu mới (`input_bg`/`track`, `icon_cell`, `text_hint`, `chip_text`,
+    `input_text`, `on_accent_dark`, `disabled_bg`, `radio_ring`, `switch_off`, `accent_flash`, `accent_blue`,
+    `accent_edge`, `edge_card_gradient`, `alert_green`, `yellow`), bổ sung thang chữ thật (11sp→36sp) và preset màu
+    đậy đủ (7 ô dùng chung, 5 ô Home).
+  - **B1**: top bar **không có nền riêng** (trừ Flash: khối surface cao ~154dp); nút phải là chữ, không phải icon;
+    ghi chú `view_top_bar.xml` hiện tại trong code chỉ phù hợp màn có nút ←.
+  - **B8**: thêm số đo chính xác cho Filled/Disabled/Text/Gradient/nút viền Home/nút Next Onboarding/nút tròn
+    header/nút mũi tên thẻ/nút phóng to preview — sửa điểm sai: chữ nút Filled là **trắng** (không phải
+    on_primary tối).
+  - **B2**: thêm padding **20dp**, khoảng cách phần tử **16dp** (Edge: 24dp), khoảng cách giữa thẻ **20dp**, lề
+    màn **16dp**.
+  - **B3**: phân rõ kích thước Settings (328×56) vs Flash Alert (328×72), cụ thể hóa cỡ chữ/khoảng cách.
+  - **B4**: thêm kích thước switch chuẩn (track 44×24, núm 20) + ghi chú Edge Lighting đang dùng switch
+    **không đồng bộ** (50×23, nền #EFEFEF) — vẫn dùng switch chuẩn cho Edge.
+  - **B5**: track đúng là **8dp** (không phải 4dp như bản cũ), núm **24dp**, thêm khoảng cách nhãn→track và
+    giữa 2 slider (16dp).
+  - **B7**: **sửa sai quan trọng** — chữ tên ngôn ngữ **KHÔNG** đổi màu khi chọn (luôn trắng), chỉ `ivCheck`
+    đổi (vòng rỗng → tròn trắng + tích tối); kích cỡ đúng là 328×60, bo 16dp, cờ 36 (không phải 32).
+  - Chỉ sửa tài liệu, **chưa đổng đẩn code/res hiện có** (vd `item_selectable_row.xml`,
+    `Widget.App.Button.Filled` trong `styles.xml` đang dùng màu on_primary cho chữ thay vì trắng) — cần
+    đối chiếu lại khi code thật các component này.

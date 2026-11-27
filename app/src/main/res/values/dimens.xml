@@ -4,14 +4,22 @@
     <dimen name="text_large_title">24sp</dimen>
     <dimen name="text_screen_title">20sp</dimen>
     <dimen name="text_title">18sp</dimen>
-    <dimen name="text_button">14sp</dimen>
+    <dimen name="text_button">18sp</dimen>
+    <dimen name="text_button_small">14sp</dimen>
     <dimen name="text_body">14sp</dimen>
     <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_subhead">16sp</dimen>
+    <dimen name="text_desc_small">11sp</dimen>
+    <dimen name="text_power_state">36sp</dimen>
+    <dimen name="text_led_preview">32sp</dimen>
 
     <!-- Corner radii -->
     <dimen name="radius_button">12dp</dimen>
     <dimen name="radius_item">12dp</dimen>
-    <dimen name="radius_card">16dp</dimen>
+    <dimen name="radius_card">24dp</dimen>
+    <dimen name="radius_card_setting">12dp</dimen>
+    <dimen name="radius_language_item">16dp</dimen>
+    <dimen name="radius_chip">8dp</dimen>
 
     <!-- Spacing -->
     <dimen name="screen_padding">16dp</dimen>
@@ -19,16 +27,26 @@
     <dimen name="space_8">8dp</dimen>
     <dimen name="space_12">12dp</dimen>
     <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
     <dimen name="space_24">24dp</dimen>
 
-    <!-- Component heights -->
+    <!-- Component heights & sizes -->
     <dimen name="button_height">48dp</dimen>
     <dimen name="button_height_small">36dp</dimen>
+    <dimen name="language_item_height">60dp</dimen>
+
+    <!-- Slider & Switch specs from Figma -->
+    <dimen name="slider_track_height">8dp</dimen>
+    <dimen name="slider_track_radius">4dp</dimen>
+    <dimen name="slider_thumb_radius">12dp</dimen>
+    <dimen name="switch_track_width">44dp</dimen>
+    <dimen name="switch_track_height">24dp</dimen>
+    <dimen name="switch_thumb_size">20dp</dimen>
 
     <!-- Corner radii bổ sung -->
     <dimen name="radius_dialog">16dp</dimen>
     <dimen name="radius_image">8dp</dimen>
-    <dimen name="radius_pill">100dp</dimen>
+    <dimen name="radius_pill">999dp</dimen>
 
     <!-- Khung / vùng chạm -->
     <dimen name="top_bar_height">56dp</dimen>
@@ -58,7 +76,7 @@
     <dimen name="card_padding_vertical">12dp</dimen>
     <dimen name="card_padding_horizontal">16dp</dimen>
     <dimen name="card_gap">14dp</dimen>
-    <dimen name="list_item_gap">8dp</dimen>
+    <dimen name="list_item_gap">12dp</dimen>
     <dimen name="section_gap">12dp</dimen>
 
     <dimen name="splash_logo_size">110dp</dimen>

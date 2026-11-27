@@ -14,6 +14,7 @@ import com.example.flashlight.data.settings.OnboardingStep
 import com.example.flashlight.data.settings.SettingsRepository
 import com.example.flashlight.databinding.ActivitySplashBinding
 import com.example.flashlight.ui.language.LanguageActivity
+import com.example.flashlight.ui.onboarding.OnboardingActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
@@ -68,7 +69,7 @@ class SplashActivity : AppCompatActivity() {
         // TODO GĐ 3: thay MainActivity bằng màn thật khi đã tạo
         val target = when (step) {
             OnboardingStep.LANGUAGE -> LanguageActivity::class.java  // → LanguageActivity
-            OnboardingStep.INTRO -> MainActivity::class.java      // → OnboardingActivity
+            OnboardingStep.INTRO -> OnboardingActivity::class.java      // → OnboardingActivity
             OnboardingStep.PERMISSION -> MainActivity::class.java // → PermissionActivity
             OnboardingStep.DONE -> MainActivity::class.java       // → HomeActivity
         }

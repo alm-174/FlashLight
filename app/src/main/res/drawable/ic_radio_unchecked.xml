@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Vòng tròn rỗng: trạng thái CHƯA chọn của ô danh sách (B7). Dùng trong selector_check_icon.xml. -->
+<!-- Vòng tròn rỗng, viền radio_ring (#A5AEBA) 1.5dp: trạng thái CHƯA chọn của ô danh sách (B7) theo Figma. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
     <path
         android:fillColor="@android:color/transparent"
-        android:pathData="M12,3A9,9 0,1 0,12 21A9,9 0,1 0,12 3Z"
-        android:strokeColor="@color/stroke"
-        android:strokeWidth="2" />
+        android:pathData="M10,1A9,9 0,1 0,10 19A9,9 0,1 0,10 1Z"
+        android:strokeColor="@color/radio_ring"
+        android:strokeWidth="1.5" />
 </vector>

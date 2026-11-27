@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Vòng tròn primary + dấu tick: trạng thái ĐÃ chọn của ô danh sách (B7). Dùng trong selector_check_icon.xml. -->
+<!-- Vòng tròn trắng đặc + dấu tick màu tối #141B34: trạng thái ĐÃ chọn của ô danh sách (B7) theo Figma. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
     <path
-        android:fillColor="@color/primary"
-        android:pathData="M12,2A10,10 0,1 0,12 22A10,10 0,1 0,12 2Z" />
+        android:fillColor="@color/white"
+        android:pathData="M10,0A10,10 0,1 0,10 20A10,10 0,1 0,10 0Z" />
     <path
         android:fillColor="@android:color/transparent"
-        android:pathData="M7,12.5L10,15.5L17,8.5"
-        android:strokeColor="@color/on_primary"
+        android:pathData="M6,10.2L8.7,12.9L14.3,7.3"
+        android:strokeColor="#141B34"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:strokeWidth="2" />
+        android:strokeWidth="1.8" />
 </vector>

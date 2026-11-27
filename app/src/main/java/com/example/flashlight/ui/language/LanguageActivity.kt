@@ -1,5 +1,6 @@
 package com.example.flashlight.ui.language
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
@@ -19,6 +20,7 @@ import com.example.flashlight.core.ui.applySystemBarsPadding
 import com.example.flashlight.core.ui.collectOn
 import com.example.flashlight.core.ui.getStringForLocale
 import com.example.flashlight.databinding.ActivityLanguageBinding
+import com.example.flashlight.ui.onboarding.OnboardingActivity
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 
@@ -129,8 +131,10 @@ class LanguageActivity : AppCompatActivity() {
             finish()
         } else {
             viewModel.completeLanguageStep {
-                // TODO: Mở OnboardingActivity ở bước tiếp theo
-                finish()
+                viewModel.completeLanguageStep {
+                    startActivity(Intent(this, OnboardingActivity::class.java))
+                    finish()
+                }
             }
         }
     }

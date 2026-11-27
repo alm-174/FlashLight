@@ -64,7 +64,6 @@ class OnboardingActivity : AppCompatActivity() {
                 binding.viewPager.currentItem = current + 1
             } else {
                 viewModel.completeOnboarding {
-                    // TODO: Đổi sang PermissionActivity ở bước tiếp theo
                     startActivity(Intent(this, MainActivity::class.java))
                     finish()
                 }

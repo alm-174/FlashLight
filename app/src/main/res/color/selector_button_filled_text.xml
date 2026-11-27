@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- disabled_text không tạo mới: trùng giá trị với text_tertiary (#A4ACB9) đã có -->
-    <item android:color="@color/text_tertiary" android:state_enabled="false" />
-    <item android:color="@color/on_primary" />
+    <item android:color="@color/white" android:state_enabled="false" />
+    <item android:color="@color/white" />
 </selector>
